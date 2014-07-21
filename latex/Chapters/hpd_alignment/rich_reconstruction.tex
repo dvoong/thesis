@@ -1,0 +1,21 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                   	RICH RECONSTRUCTION											        	        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{RICH resolution}
+To check the resolution of the RICH detector, the saturation properties of the Cherenkov angle are exploited. Saturated particles are selected with a momentum requirement on the associated track. The RICH resolution is determined from the variable $\Delta\theta$, defined as the difference between the measured Cherenkov angle $\theta_C$ and the expected Cherenkov angle $\theta_C^{exp}$ for an individual track,
+
+\begin{equation}
+	\Delta \theta_{C} = \theta_{C} - \theta_C^{exp}
+\end{equation}
+
+where the measured Cherenkov angle is the direct Cherenkov angle measurement from the RICH detector and the expected Cherenkov angle is calculated from equation \ref{equation: Cherenkov angle in terms of mass and momentum} using momentum information acquired from the tracking and with the assumption that the particle associated to track is a pion.
+
+This distribution of of $\Delta\theta$ is fitted with the sum of a gaussian and second order polynomial, see figure \ref{fig: resolution_plot_RICH1_RICH_reconstruction}. The overall RICH resolution is then defined as the width of the gaussian component of the distribution fit. 
+
+%The reconstruction process is carried out by the LHCb software package Brunel. The performance of the RICH detector can be gauged from a plot of $\Delta \theta_{Cherenkov}$ ($\theta_{C} - <\theta_{C}>$) for saturated tracks.
+%
+% For a particle of mass $m$ the Cherenkov equation (equation \ref{equation: Cherenkov radiation})  can be written as a function of the particle's momentum $\vec{p}$, 
+%
+%\begin{equation}
+%	\cos{\theta_C} = \frac{1}{n}\frac{m}{|\vec{p}|}, \,\,\,\,\,\,\,\,\,\,\, \vec{p} = \gamma m \vec{v}\\
+%\end{equation}

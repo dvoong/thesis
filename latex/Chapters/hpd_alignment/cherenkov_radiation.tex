@@ -1,0 +1,50 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                   CHERENKOV RADIATION										        	        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cherenkov Radiation}
+
+Charged particles traversing through a medium at a speed greater than the speed of light in the same medium emit electromagnetic radiation known as Cherenkov radiation. The angle at which the radiation is emitted relative to the direction of the particle (Cherenkov angle) is constant given the speed of the particle and the refractive index of the medium are also constant. The relationship between the speed of the particle ($\beta = \frac{|\vec{v}|}{c}$), refractive index of the medium ($n$) and the Cherenkov angle ($\theta_C$) is described by the equation,
+
+\begin{equation}
+	\cos{\theta_C} = \frac{1}{n\beta}\\
+	\label{equation: Cherenkov radiation}
+\end{equation}
+
+The speed of the particle, $\beta$ can be expressed in terms of its mass $m$ and momentum $\vec{p}$,
+
+\begin{eqnarray}
+	\beta&=&\frac{|\vec{p}|}{E}
+	= \frac{|\vec{p}|}{\sqrt{\vec{p}^2 + m^2}}
+	= \frac{1}{\sqrt{1 + \frac{m^2}{\vec{p}^2}}}
+%	= \frac{\gamma m |\vec{v}|}{\gamma m} \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, c = 1
+\end{eqnarray}
+
+The equation for the Cherenkov angle can then be expressed in terms of mass and momentum,
+
+\begin{equation}
+	\cos{\theta_C} = \frac{1}{n}\sqrt{1 + \frac{m^2}{\vec{p}^2}}
+	\label{equation: Cherenkov angle in terms of mass and momentum}
+\end{equation}
+
+In this form the particle type of a particle can be determined from knowledge its momentum and the corresponding angle of Cherenkov radiation produced by it. 
+
+For a medium with refractive index $n$ and where $|\vec{p}| >> m$ the Cherenkov angle becomes \emph{saturated} such that for all particle types the Cherenkov equation can be expressed as,
+
+\begin{equation}
+	\cos{\theta_C^{max}} = \frac{1}{n}
+	\label{equation: saturated Cherenkov radiation}
+\end{equation}
+
+\begin{equation}
+	\theta_C^{max}(\pi) = \theta_C^{max}(K) = \theta_C^{max}(p)
+\end{equation}
+
+Saturation of the Cherenkov angle in the LHCb RICH detector can be seen in figure \ref{fig: RICH radiator}.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=8.5cm]{$HOME/Dropbox/LHCb/detector/RICH/images/radiators_saturated_tracks.png}
+		\caption{Cherenkov angle for tracks transversing different RICH gas radiators as a function of momentum. The saturation regions are indicated.}
+		\label{fig: RICH radiator}
+	\end{center}
+\end{figure}

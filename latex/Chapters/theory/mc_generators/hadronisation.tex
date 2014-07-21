@@ -1,0 +1,51 @@
+\subsection{Hadronisation}
+\label{section: hadronisation}
+
+%In order to form colour singlet states particle-antiparticle pairs may spontaneously be created by separating partons when the energy used to separate the partons is greater than the masses of the created particles. As the quarks separate, the binding gluons form a string of the colour field between them. The energy in the string increases linearly with distance,
+%
+%\begin{equation}
+%	V(r) = \kappa r
+%\end{equation}
+%
+%where r is the distance between the quarks and $\kappa$ is the tension in the string ($\sim1GeV/fm$). As the distance between quarks increase the energy in the colour field increases also. When the colour field has enough energy a quark-antiquark pair may form (with opposite colour in order to  conserve colour). This process may occur many times follow a single proton-proton interaction creating the characteristic shower of particles associated with high energy collider experiments.
+
+%Since the distance between quarks increase in the process of hadronisation, the coupling constant between them also increases. In this energy regime perturbative methods diverge i.e. perturbative QCD cannot describe the behaviour of particles in this regime. Instead other approaches such as hadronisation models (see section \ref{section: hadronisation}) are used with success. 
+
+Hadronisation is the process of evolving a system of coloured partons into colourless hadrons, photons and leptons. Hadronisation occurs in the long distance regime where perturbation theory breaks down. Instead MC generators use phenomenological models to describe the process. The two leading class of models are the string model and the cluster model, described further in the following sections.
+
+The hadronization model used varies in importance for different observable parameters i.e. some variables are more sensitive to it than others. It has a significant effect on the particle multiplicity of an event but less so for the energy flow which is instead more sensitive to the hard process of the event. Therefore in order to constrain hadronisation models with real data, observables such as the particle multiplicity are of great importance.
+
+\subsubsection*{The String Model}
+The Pythia generator uses the a string model to model the hadronization process, in this model quark bound systems are described as being connected by a string with potential,
+
+\begin{equation*}
+	V(r) = \kappa r
+\end{equation*}
+
+where r is the distance between the quarks and $\kappa$ is the tension of the string ($\sim 1$ GeV/fm). In this model, a system with a separating quark-antiquark has a colour flux tube joining the pair. The diameter of the tube has dimension of the typical hadronic size ($\sim 1$fm) and is assumed to be cylindrically symmetric along its length. A massless relativistic string with no transverse degrees of freedom is used to model the axis of symmetry and the tension in the string ($\kappa$) gives the energy density of the colour flux tube.
+
+As the distance between quarks increases the flux tube grows longer but with fixed diameter giving rise to the linear potential. This implies a distance independent force of attraction above some distance scale, it is thought that this is due to gluon self interactions originating from the three gluon vertex processes though it is not well understood.
+
+% Mention Lattice QCD?
+% Mention distance independent force of attraction above some distance scale?
+% Mention self interaction gluonic field?
+% Mention light quark are favoured or that lund model does not generate heavy quarks in hadronisation process
+% u : d : s : c Å 1 : 1 : 0.3 : 10?11.
+
+\subsubsection*{The Cluster Model}
+The cluster model is based on the concept of colour pre-confinement, a property of QCD that states for partons at virtuality scales ($Q$) much lower than the hard process ($Q_{\mathrm{H}}$), 
+
+\begin{equation*}
+	Q << Q_{\mathrm{H}}
+\end{equation*}
+
+form colour-singlets pairs called clusters. The invariant mass distribution of the clusters falls rapidly at high masses and is asymptotically independent of the scale of the hard process ($Q_\mathrm{H}$), depending only on $Q$ and the QCD scale $\Lambda_{\mathrm{QCD}}$. 
+
+To form clusters from the parton shower, the cluster model first performs gluon splitting that evolve gluons into a quark-antiquark pairs that then form the singlet cluster states with neighbouring quarks. These then undergo isotropic quasi-two-body decays into the observed hadrons.
+
+%Mass spectrum of colour-singlet pairs asymptotically independent of energy at low Q, peaked at $Q_0$
+%Identify these clusters at the hadronisation scale $Q_0$ as proto-hadrons that decay into the observed final-state hadrons
+%Local parton-hadron duality
+%For Q0?1 GeV, most clusters have masses below 3 GeV (see Figure 5) and can be decayed into hadrons using a simple isotropic quasi-two-body phase space model
+%For clusters in the higher-mass tail of the distribution, a string-like model of sequential cluster decay is adopted
+%The model starts by splitting gluons non-perturbatively $g \rightarrow q\bar{q}$ after the parton shower. 

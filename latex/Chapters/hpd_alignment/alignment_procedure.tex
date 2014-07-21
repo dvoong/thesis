@@ -1,0 +1,99 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                   APPLICATION OF CORRECTION FACTORS									        	        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Alignment Procedure}
+\label{chap: application of correction factors}
+The shifts in the HPD image centre are tracked and corrected for in the LHCb conditions database. The database contains information on the environment in the LHCb detector such as the position of detector components. In the database a central axis for each HPD is defined which runs through the centre of its base and centre of its quartz window. To correct for the image shift, the position of the silicon chip array in the plane perpendicular to the central axis is modified such that it is displaced by the displacement vector of the image centre shift. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                   	RUN DEPENDENT CORRECTIONS										        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Run dependent corrections}
+For data collected in 2010 a global correction to the HPD image centre was applied for all runs. The global correction factor was calculated from the averaged HPD image centre for each run.  For the reprocessing of this data in 2011 and the data collected in 2011 a correction per run strategy was implemented. For every run a corresponding database slice is produced containing information on the position correction of the silicon chip array for that run. The idea of a correction per run technique was also investigated during data taking in 2010, however instabilities in the HPD image centre fit resulted in the global averaged correction yielding better performance. These issues were addressed in the software used in 2011. The later version employed a more sophisticated fit method in addition to additional modifications (see section \ref{section: Fitting Procedure}) as well as general bug fixes.
+
+Figures \ref{fig: resolution_plot_RICH1_RICH_reconstruction} and \ref{fig: resolution_plot_RICH2_RICH_reconstruction} show the distribution of $\Delta\theta$ for tracks produced during run $80168$ in 2010 for RICH 1 and RICH2 respectively. The left side of the plots show the distribution of $\Delta\theta$ where the global HPD image shift correction has been applied and the right side of the plots show the distribution where the correction per run method as well as the more recent image fitting methods are used. For RICH 1 the resolution is improved by $7.6\%$ from $1.88$ mrad to $1.747$ mrad and $4.6$\% from $0.78$ mrad to $0.75$ mrad for RICH 2. The order of the improvements in the resolution were found to consistently improve the resolutions with improvements of similar magnitudes for several runs.
+
+%In the 2010 software the detector database was updated with image shifts which were averaged over all runs. It was expected that applying corrections on a run by run basis would yield better results however this was not observed and remained an outstanding issue, this was revisited in the development of the the 2011 alignment software. 
+
+%Early tests in run by run corrections involved manual overrides in the LHCb conditions database and the reconstruction was applied on data containing an individual run rather than a combination of several. For the last ten runs of the 2010 data the manual override corrections showed consistent improvement over corrections for image centres averaged over all runs (improvements $ \sim4\%$), fig \ref{fig: resolution_plot_RICH1_RICH_reconstruction}. 
+
+%However, running the reconstruction with the standard workflow on data that consisted of mixed runs showed no improvement over the 2010 software, this suggested the issue was not due to the image centre fitting but with the process of passing the image centre positions between the conditions database and the reconstruction software.
+%
+%Investigation into this revealed two bugs in the RICH alignment software. The first was due to differences in time zones in which the data was produced and where the databases were produced. This resulted in all the data being shifted by an hour, this however was not expected to be a major factor for the discrepancy since the movement of the HPD centres is thought to a gradual movement (see figure \ref{fig:november lab test}). The second was related to the database being updated properly for 2010 data. Following fixes for these two problems the full reconstruction was again carried out this time showing significant improvements for time dependent corrections (section \ref{sec: full reconstruction}).
+
+%[Reference] to 2010 software and a brief explanation why that was adopted for 2010
+
+%Applying the alignment software for a series of runs requires the CPU intensive task of re-running of the reconstruction software for each run, because of this it was not practical to rerun the alignment for every change made in the alignment software. Furthermore re-running the alignment software typically involved corrections from other RICH alignments groups, e.g. the mirror alignment and MDCS groups. 
+
+%In later versions of the alignment software the alignment performance for run by run corrections out performed those in which the image centres were averaged over all runs. Since there were many small changes and fixes in the software over the course of development is it not possible to say with absolute certainty what change(s) fixed the issue. The most probable reason(s) is due to bug fixes in the time management of the conditions database as well as the improvement int the stability and handling of unphysical fits.
+
+
+%You need to be quantitative
+%These initial manual corrections showed a consistent improvement for all of the ten runs which were looked at, see figure \ref{fig: resolution_plot_RICH1_RICH_reconstruction} and figure \ref{fig: resolution_plot_RICH2_RICH_reconstruction}. This was a reassuring sign that run by run corrections were now showing improved resolutions in comparison to corrections averaged over all runs. However, these test plots were produced using a different framework to how in practise the reconstruction is carried out. Additionally the RICH software uses database values which vary as a function of time (typically one hour intervals in the case of HPD image centres) rather than as a function of the run number.
+%You need to give more detail of the differences
+%Is this a problem? Has this been investigated? Discuss in a quantitative way
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=13cm]{$HOME/Dropbox/LHCb/detector/RICH/images/resolution_plot_RICH1_RICH_reconstruction.pdf}
+		\caption{CK angle reconstructed - CK angle expected for photons from saturated tracks in RICH1 for run 80168. Left) Using 2010 default database values. Right) Using new alignment procedures and run by run corrections}
+		\label{fig: resolution_plot_RICH1_RICH_reconstruction}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=13cm]{$HOME/Dropbox/LHCb/detector/RICH/images/resolution_plot_RICH2_RICH_reconstruction.pdf}
+		\caption{As with figure \ref{fig: resolution_plot_RICH1_RICH_reconstruction} but for RICH2}
+		\label{fig: resolution_plot_RICH2_RICH_reconstruction}
+	\end{center}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                   		FULL RECONSTRUCTION										        	        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Full reconstruction}
+\label{sec: full reconstruction}
+
+The full reconstruction of events in the RICH system incorporates the most recent alignment in other parts of the system e.g. the mirror alignment and magnetic distortion calibration. These components are interrelated with the HPD image centre alignment such that improvements in the alignment method of one will propagate to another. The overall improvement in the resolution of the RICH detector can be seen in figures \ref{fig: resolution_plot_RICH1_full_reconstruction} and \ref{fig: resolution_plot_RICH2_full_reconstruction} for RICH1 and RICH2 respectively. These plots show the distribution of the resolution parameter $\sigma$ (the width parameter of the Gaussian component of the fit to $\Delta\theta$) for all runs.
+
+Further improvement in the Cherenkov angle resolution is seen in in the case of the full reconstruction with an improvement of $8$\% in resolution, from $1.75$ mrads to $1.62$ mrads in RICH1 and $7.4$\% improvement in resolution from $0.73$ mrads to $0.68$ mrads in RICH2.
+
+%Figures \ref{fig: resolution_plot_RICH1_full_reconstruction} and \ref{fig: resolution_plot_RICH2_full_reconstruction} show the distribution of the width parameter $\sigma$ of the Gaussian component of the fit to the distribution of $\Delta\theta$ for data collected in 2010. 
+%
+%Figures \ref{fig: resolution_plot_RICH1_full_reconstruction} and \ref{fig: resolution_plot_RICH2_full_reconstruction} show the distribution of the Cherenkov resolution for all runs in 2010 collected data for RICH 1 and RICH 2. Each entry corresponds to the width of the $\Delta \theta_{Cherenkov}$ distribution for a run.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=13cm]{$HOME/Dropbox/LHCb/detector/RICH/images/2010_old-new_comparison_RICH1.png}
+		\caption{CK angle resolution for 2010 runs in RICH1. Left) 2010 alignment Right) 2011 alignment}
+		\label{fig: resolution_plot_RICH1_full_reconstruction}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=13cm]{$HOME/Dropbox/LHCb/detector/RICH/images/2010_old-new_comparison_RICH2.png}
+		\caption{CK angle resolution for 2010 runs in RICH2. Left) 2010 alignment Right) 2011 alignment}
+		\label{fig: resolution_plot_RICH2_full_reconstruction}
+	\end{center}
+\end{figure}
+
+\subsection{Data from 2011}
+
+Table \ref{tab:mean Cherenkov angle resolution 2011 data} shows the result of the 2011 alignment software on the 2011 data taken up to May 2011. The alignment procedure appears to be stable under the change in conditions of the detector.
+
+\begin{table}[htdp]
+	\begin{center}
+		\caption{Mean Cherenkov angle resolution for 2011 data (up to May 2011) using the 2011 alignment software, in mrad}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			RICH & $<\mu>$ (from MC) & $\mu$ \\
+			\hline
+			1 & 1.55 & 1.63 \\
+			2 & 0.68 & 0.69 \\
+			\hline
+		\end{tabular}
+		\label{tab:mean Cherenkov angle resolution 2011 data}
+	\end{center}
+\end{table}

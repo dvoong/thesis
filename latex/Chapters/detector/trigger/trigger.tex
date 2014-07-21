@@ -1,0 +1,51 @@
+\section{Trigger}
+\label{section: trigger}
+
+\subsection*{Requirements}
+
+The Large Hadron Collider was designed with a nominal bunch crossing rate of 40 MHz corresponding to a bunch crossing rate with at least one visible inelastic proton-proton interaction of $\sim$ 11 MHz \cite{Aaij:1493820}. The trigger system is required to select from these events rare interactions such as those involving the production of $\mathrm{b}\bar{\mathrm{b}}$ pairs, these events are typically characterised by the presence of particles with high transverse energy and momentum corresponding to daughter particles from the decay of the b quarks. To achieve this the trigger translates the raw detector hit information into physical processes and then decides on whether the event is to be kept. The time in which the trigger can achieve this is strictly constrained by the interaction rate in the LHCb detector. This rate is constantly being driven to higher values to get the most out of the detectors and maximise the data taking rate of experiments at the LHC. Such a dynamically changing environment requires an equally robust trigger.
+
+\subsection*{Layout}
+
+The trigger system is divided into two levels, the level 0 trigger (L0) and the High Level Trigger (HLT) \cite{Antunes-Nobrega:630828}. The high level trigger is further subdivided into two subsections, HLT1 and HLT2. For an event to pass the trigger it must pass each of the subdivisions in sequence (L0, HLT1, HLT2). Events selected by the trigger are then written to permanent data storage for further processing and analysis.
+
+\subsubsection*{Level 0 Trigger (L0)}
+The L0 trigger uses information from the muon and calorimeter systems. It identifies high transverse energy photons, hadrons and electrons from hits in the calorimeter system and high transverse energy muons from hits in the muon system. As the first level in the trigger system the L0 trigger makes more decisions that the following levels, to do this the trigger must be very fast. For this reason the decision algorithm is implemented in hardware with the electronics located inside the experiment and connected by optical fibres. The L0 trigger reduces the event rate from 40 MHz to 1.1 MHz with a maximum latency of $4\, \mu s$
+
+\subsubsection*{High Level Trigger}
+The high level trigger is a software implemented trigger system, it runs on the Event Filter Farm (EFF), a network of computers dedicated to making fast decisions about events \cite{1742-6596-396-1-012053}. The presence of a software based trigger in addition to the hardware based trigger increases the flexibility of the trigger system; providing a simple interface  to apply modification of parameters, implementation and computing resources without direct access to the physical components. 
+
+The HLT has access to all the raw data from the LHCb detector, this event information is stored in raw banks e.g. energy clusters in the calorimeter system, hits in the tracking system. The HLT system uses a set of algorithms to decode the raw banks into event objects such as vertices, tracks and particles; this is known as the \emph{reconstruction} process. The event objects are passed as arguments to a decision algorithm which determines whether the event is kept depending on the properties of the event objects, e.g. a minimum transverse momentum requirement of particles produced in the event or a minimum impact parameter requirement between a particle and interaction vertex. For events which pass the event selection many of the event objects are stored to file in order to reduced the CPU processing requirements of its later analysis.
+
+\subsubsection*{High Level Trigger 1 (HLT1)}
+The HLT1 performs the initial reconstruction defining the vertices and tracks in the event. Its role in the trigger system has varied through the evolution of the experiment, displaying the versatility of the software trigger component of the trigger system. In the 2010 data taking period the role of the trigger was to confirm the decision of the L0 trigger matching the tracks made from the calorimeter and muon system to the VELO and TStation trackers together with other additional checks such as confirming the charge of particles detected at the L0 stage in order to minimise the misidentification of neutral particles. For the 2011 data taking period the HLT1 used a one track approach, basing the decision on the presence of at least one track passing a set of requirements such as, its impact parameter, transverse momentum, track fitting quality etc. For more information see. \cite{Antunes-Nobrega:630828} %edit
+
+\subsubsection*{High Level Trigger 2 (HLT2)}
+The HLT2 performs a higher level of reconstruction, matching track segments from each of the sub detector components to form a combined track with improved position and momentum resolution. Basic particle identification is applied these tracks to produce particle objects; this together with reconstruction of secondary vertices enable the reconstruction of both inclusive and exclusive decay channels e.g. $B \rightarrow hhhh$ or $B \rightarrow DX$. 
+
+\subsection*{Offline Processing and Reprocessing}
+Events which pass the trigger system are written to a permanent file storage system together with the full detector information. Before these data are made available for physics analysis there is an additional offline processing stage. In the offline environment the time requirements for processing each event are lessened allowing for more sophisticated algorithms to be run such as algorithms which decode particle identification information from the RICH system as well as advanced clone killing algorithms. 
+
+Having the raw event information stored allows for reprocessing of the event information, this is useful since the reconstruction algorithms are constantly improving as well as the understanding of the detector and its alignment methods. Older data can then be reprocessed, giving event objects with greater resolution on their measurements i.e. are better representations of the corresponding physical particles.
+
+\subsection*{Performance}
+
+The trigger system has shown to be flexible and robust during the operation of the LHCb detector adapting to the larger pile-up conditions imposed by the machine delivering 1296 instead of the planned 2622 colliding bunches. The trigger rates of the LHCb detector in 2011 are outlined in table \ref{table: trigger performance} \cite{Aaij:1493820}.
+
+\begin{table}[htdp]
+	\caption{Trigger output rates during the 2011 data taking period}
+	\begin{center}
+		\begin{tabular}{|c|c|}
+			\hline
+			Trigger & Output Rate (kHz) \\
+			\hline
+			L0 & 870 \\
+			HLT1 & 43 \\
+			HLT2 & 3 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\label{table: trigger performance}
+\end{table}%
+
+

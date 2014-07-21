@@ -1,0 +1,315 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                   		IMAGE FITTING TECHNIQUE											        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Image fitting technique}
+\label{section: Fitting Procedure}
+
+Image fitting is applied to the accumulated hit maps in order to find the centre of the image. A boundary finding procedure is first employed to find the edges of the images, once the boundary is determined a $\chi^2$ minimisation is performed to fit a circle to the boundary. Various boundary finding methods were investigated, two of these are outline below, 1. Threshold boundary fitting and 2. Sobel boundary fitting.
+
+%Shifts in the image centre translate to a shift in the effective position of the silicon chip sensor. From this it follows that if this shift is not corrected for then some error will be associated to projection of photons on the HPD hence their Cherenkov angles. This is corrected by modifying the LHCb detector database to include information on the HPD image centre positions (translated to the silicon chip position). Since the image centre positions vary with time it is necessary to to split the database up into slices such that each slice corresponds to a run period.
+
+%The alignment procedure involves fitting the HPD hit map (fig \ref{example_HPD_image_summaries}), this involves first marking out a boundary to the image which is then fitted with a circle from which the centre is taken as the image centre. %, this is followed by a correction to the image centre to compensate for the displacement from its nominal position. This steps of this process are outlined below,
+
+%\begin{enumerate}
+%	\item Calculate an image boundary for the hit map
+%	\item Fit a circle to the image boundary and take the centre of the circle as the centre of the hit map
+%	\item Record image centre in the LHCb conditions database with a timestamp corresponding to the time of the run
+%	\item Rerun the reconstruction software with the updated conditions database for the end of year reprocessing (Since the hit map is produced from data collected over the total duration of a run it is not possible to perform an online alignment at the time of data taking)
+%\end{enumerate}
+
+%A private database together with a full RICH reconstruction was carried out to test the effect of the alignment procedure on the Cherenkov angle resolution.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                   		BOUNDARY SELECTION PROCEDURE									        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection {Boundary selection procedure}
+The boundary selection method uses an iterative algorithm to scan over the hit map scanning from the pixels in the outer region towards the centre. A test is applied to each pixel with a set of criteria to meet, the outermost pixels which pass the test are then marked as part of the boundary of the image. The Sobel boundary fitting method incorporates an additional process applied to the hit map prior to the boundary selection, this process emphasises regions in the image with large changes to the image intensity hence emphasising the image boundaries.
+
+
+%The alignment software provides two different methods for fitting the image centre of a HPD hit map. These correspond to the two different methods for fitting the boundary (the circle fitting procedure for the two methods is the same). The two boundary fitting methods are outlined in the following sections.
+
+%The boundary of the image can be calculated by two possible methods which are outlined in the following sections. In general the boundary selection method uses an iterative algorithm to scan over the hit map scanning from the pixels in the outer region towards the centre. A test is applied to each pixel with a set of criteria to meet, the outermost pixels which pass the test are marked as part of the boundary of the image. 
+
+%, the criteria are as follows,
+%The boundary of the image can be calculated by two possible methods, these are outlined in the following sections.
+%The algorithm can be configured to scan the image in various orders, e.g. columns followed by rows and vice-versa.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                   		THRESHOLD BOUNDARY FITTING										        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Threshold boundary fitting}
+
+The threshold boundary method uses two criteria to determine the boundary pixels.
+
+\begin{description}
+	\item[Criteria 1] \hfill \\ The number of hits for a pixel must pass a user defined threshold parameter. The parameter is defined such that a value of 1 corresponds to the average number of hits per pixel for the HPD image. The optimal threshold value is calculated by comparing the Cherenkov angle resolution as a function of the threshold value.
+	\item[Criteria 2] \hfill \\ At least one of its adjacent pixels must also pass requirement 1, this requirement reduces the contribution of pixels with unexpectedly high population (noisy pixels). This can occur when there is a fault with an individual pixel.
+\end{description}
+
+%The threshold boundary fitting method carries on from the 2010 alignment software approach, the simpler of the two methods, it involves an iterative algorithm which effectively scans over the pixel map on the silicon chip scanning from the outer regions of the chip to the centre. The first pixel to satisfy the following requirements marks the a boundary point on the HPD image summary,
+
+%The threshold boundary method uses an iterative algorithm to scan over the hit map scanning from the pixels in the outer region towards the centre. A test is applied to each pixel with a set of criteria to meet, the outermost pixels which pass the test are marked as part of the boundary of the image, the criteria are as follows, 
+
+%comment: Need some plots of boundary selection using threshold method
+%In the 2010 software the boundary algorithm scanned {\bf only} the from top to bottom and from bottom to top of the HPD. The 2011 software additional scans horizontally and determines a boundary from the convolution of both directions. The differences can be seen in figure \ref{fig: comparison of 2010, 2011 boundary fitting}
+%Needs more detail of what I'm looking at in the Figure.
+%\begin{figure}[ht]
+%	\begin{center}
+%	\subfloat[2010]
+%	{
+%		\includegraphics[height = 4cm, width = 4cm]{/Users/admin/Pictures/scruffy_dog_small.jpg}
+%		\label{fig:simple boundary fitting 2010}
+%	}
+%	\subfloat[2011]
+%	{
+%		\includegraphics[height = 4cm, width = 4cm]{/Users/admin/Pictures/scruffy_dog_small.jpg}
+%		\label{fig:simple boundary fitting 2011}
+%	}
+%	\caption{Comparison of simple boundary fitting 2010 and 2011} 
+%	\label{fig: simple boundary fitting comparison}
+%	\end{center}
+%\end{figure}
+
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=13cm]{$HOME/Dropbox/LHCb/detector/RICH/images/boundary_fitting_comparison.pdf}
+%\caption{Boundary fitting comparison: left) 2010, centre) HPD image summary with image cleaning and Sobel filter applied, right) HPD image summary with fitted circle of centre image overlaid}
+%\label{fig: comparison of 2010, 2011 boundary fitting}
+%\end{center}
+%\end{figure}
+
+% Put image of 2010 boundary fitting here too
+
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=13cm]{$HOME/Dropbox/LHCb/detector/RICH/images/HPD_image_summaries_boundary.png}
+%\caption{HPD image summaries from figure \ref{example_HPD_image_summaries} with boundaries fitted using the 2011 simple boundary fitting method}
+%\label{fig: simple boundary fitting 2011}
+%\end{center}
+%\end{figure}
+
+% figures showing the boundary fitting algorithm for 2010 and 2011
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                   		SOBEL BOUNDARY FITTING										        	        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Sobel boundary fitting}
+
+
+Similarly to the threshold boundary method the Sobel method also uses a set of criteria to select a boundary, however, before this process a filter is applied to the HPD hit image which maps the intensity ($I$) of a pixel to its intensity gradient in relation to its adjacent pixels. An example of the Sobel filter being used in the field of image processing can be seen in figure \ref{fig: sobel example} and an example of the application of the Sobel filter to a HPD image is shown in figure \ref{fig: HPD image with Sobel filter applied}. The intensity gradient is calculated by calculating the horizontal and vertical intensity gradients for a pixel and combining them using Pythagoras theorem,
+
+\begin{equation}
+	\frac{\partial I}{\partial \vec{r}} \approx \sqrt{\left(\frac{\partial I}{\partial x}\right)^2 + \left(\frac{\partial I}{\partial y}\right)^2}
+\end{equation}
+
+For a pixel located on row $i$ and column $j$ the horizontal intensity gradient is given by, 
+
+\begin{equation}
+	\left(\frac{\partial I}{\partial x}\right)_{(i,j)} = (I_{(i+1,j-1)} - I_{(i+1, j+1)}) + 2(I_{(i,j-1)} - I_{(i, j+1)}) + (I_{(i-1,j-1)} - I_{(i-1, j+1)})
+\end{equation}
+
+where the first term is equal to the difference between the lower diagonal left and lower diagonal right pixels; the second term is the difference between the left and right pixels weighted by a factor of two; the third term is the difference between the upper diagonal left and upper diagonal right pixels. Similarly for the the vertical intensity gradient,
+
+\begin{equation}
+	\left(\frac{\partial I}{\partial y}\right)_{(i,j)} = (I_{(i-1,j+1)} - I_{(i+1, j+1)}) + 2(I_{(i-1,j)} - I_{(i+1, j)}) + (I_{(i-1,j-1)} - I_{(i+1, j-1)})
+\end{equation}
+
+where the first term is difference between the lower diagonal left and upper diagonal left pixels; the second term is difference between the lower and upper pixels weighted by a factor of two; the third term is difference between the lower diagonal right and upper diagonal right pixels.
+
+A boundary finding algorithm is then applied to the filtered hit map, the boundary pixels are required to match the following criteria,
+
+\begin{description}
+	\item[Criteria 1] \hfill \\ The intensity gradient of a pixel must pass a user defined threshold parameter. The optimal threshold value is calculated by comparing the Cherenkov angle resolution as a function of the threshold value.
+	\item[Criteria 2]\hfill \\ The pixel must be either a peak pixel (adjacent pixels on the same column or row must have a lower intensity gradient) or be adjacent to a peak pixel and have an intensity gradient greater than a user defined threshold value that is related to the intensity gradient of its corresponding peak pixel.
+\end{description}
+
+An example of the boundary finding algorithm can be seen in figure \ref{fig: comparison of 2010, 2011 boundary fitting}.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=13cm]{$HOME/Dropbox/LHCb/detector/RICH/images/sobel_example.png}
+		\caption{An example of the Sobel filter in action}
+		\label{fig: sobel example}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=13cm]{$HOME/Dropbox/LHCb/detector/RICH/images/Sobel_filtered_image.png}
+		\caption{HPD image summary with Sobel filter applied}
+		\label{fig: HPD image with Sobel filter applied}
+	\end{center}
+\end{figure}
+
+%This can be visualised as 
+%
+%In the case of the horizontal intensity gradient this  taking the difference between intensities of adjacent pixels on the left and right columns and summing this with the difference between the intensities of the diagonally left and right pixels for the above and below rows. In addition the pixels on the central row contribute more to the intensity gradient and are given a weight of twice that for the diagonals. The weighting for the horizontal intensity gradient is visualised below, \\
+
+%Qualitatively this is equivalent to, in the case of the horizontal intensity gradient, taking the difference between intensities of adjacent pixels on the left and right and summing this with the difference between the intensities of the diagonally left and right pixels for the above and below rows. In addition the pixels on the central row contribute more to the intensity gradient and are given a weight of twice that for the diagonals. The weighting for the horizontal intensity gradient is visualised below, \\
+
+%\begin{center}
+%$
+%	\left( \begin{array}{ccc}
+%	-1 & 0 & 1 \\
+%	-2 & 0 & 2 \\
+%	-1 & 0 & 1 \end{array} \right)
+%$
+%\end{center}
+%
+%Similarly in the case of the vertical intensity gradient, the intensity gradient is given by the difference between intensities of adjacent pixels on the top and bottom and summing this with the difference between the intensities of the diagonally top and bottom pixels for the left and right columns. Again the weighting is different for each column.
+%
+%\begin{center}
+%$
+%	\left( \begin{array}{ccc}
+%	-1 & -2 & -1 \\
+%	 0 &  0  &  0  \\
+%	 1 &  2  &  1 \end{array} \right)
+%$
+%\end{center}
+
+%Again what I'm I looking at Fig 2.3
+%The Sobel method is the default method for boundary fitting, it has been shown to significant improve on the threshold boundary method. The Sobel method involves first applying the Sobel operator to the hit map. For a generic image the application of the Sobel operator produces a map of image intensity gradients (fig \ref{sobel example}). In the case of the HPD image this corresponds to the variation in the intensity of hits on the pixels on the silicon chip. The result of this can be seen in fig \ref{fig: HPD image with Sobel filter applied}. The peak regions in the image intensity gradient map correspond to the boundary region of the unprocessed image, the problem of finding the boundary of the unprocessed image is then simplified to finding the peak regions in image gradient map.
+
+%%%
+
+%\subsection{The Sobel operator}
+%\label{sec: the Sobel operator}
+%The Sobel operator is a discrete differentiation operator, computing an approximation of the gradient of the image intensity function.
+%Defining A as the image source, $*$ is the convolution operator and $G_x$, $G_y$ as the respective gradients of the image we have,
+%\begin{center}
+% \[
+% G_x =  
+%\left( \begin{array}{ccc}
+%-1 & 0 & 1 \\
+%-2 & 0 & 2 \\
+%-1 & 0 & 1 \end{array} \right) * A 
+%\]
+%\[ 
+%G_y =  
+%\left( \begin{array}{ccc}
+%-1 & -2 & -1 \\
+%0 & 0 & 0 \\
+%1 & 2 & 1 \end{array} \right) * A 
+%\]  \\
+%\[
+%G = \sqrt{G_x^2 + G_y^2} 
+%\] \newline
+%
+%\end{center}
+%
+%In the case of the vertical operator the operation on a pixel at $(x_1, y_1)$  calculates the intensity difference between the above and below pixels weighted by two summed with the intensity difference of the above right and below right pixels and of the top left and bottom left pixel both weighted by a factor of 1. \newline
+%
+%\begin{table}[htdp]
+%\begin{center}
+%\begin{tabular}{|c|c|c|}
+%\hline
+%{\cellcolor[gray]{0.8}} & {\cellcolor[gray]{0.}} & {\cellcolor[gray]{0.8}} \\ 
+%\hline
+% &  &  \\ 
+%\hline
+%{\cellcolor[gray]{0.8}} & {\cellcolor[gray]{0}} & {\cellcolor[gray]{0.8}} \\
+%\hline
+%\end{tabular}
+%\caption{the vertical intensity gradient of the centre pixel is calculated by summing the difference between the respective pixels in the above and below rows. The black pixels are weighted by a factor of 2 and the grey are weighted by a factor of 1}
+%\end{center}
+%\end{table}%
+%
+%$dI(x_1, y_1)/dy \approx 2\times \{I(x_1, y_1+1) - I(x_1, y_1-1)\} + \{I(x_1+1, y_1+1) - I(x_1+1, y_1-1)\} + \{I(x_1-1, y_1+1) - I(x_1+1, y_1-1)\} $
+
+%%%
+
+%alternatively, relative to a non-edge pixel with image intensity $I$, \newline
+%\begin{center}
+%
+%$\frac{\partial I(n,m)}{\partial x} \approx I(n+1, m+1) - I(n+1, m-1) + 2*(I(n, m+1)-I(n, m-1)) + I(n-1, m+1) - I(n-1, m-1)$ \newline
+%
+%$\frac{\partial I(n,m)}{\partial y} \approx I(n-1, m-1) - I(n+1, m-1) + 2*(I(n-1, m)-I(n+1, m)) + I(n-1, m+1) - I(n+1, m+1)$ \newline
+%
+%$\frac{\partial I(n,m)}{\partial r} \approx \sqrt{\frac{\partial I(n,m)}{\partial x}^2 + \frac{\partial I(n,m)}{\partial y}^2}$ \newline
+
+%$\frac{\partial I}{\partial x} \approx I_{top\,right} - I_{top\,left} + 2*(I_{right} - I_{left}) + I_{bottom\,right} - I_{bottom\,left} $ \newline
+%
+%$\frac{\partial I}{\partial y} \approx I_{bottom,left} - I_{top\,left} + 2*(I_{bottom} - I_{top}) + I_{bottom\,right} - I_{top\,right}$ \newline
+%
+%\[
+%\frac{\partial I}{\partial r} \approx \sqrt{\frac{\partial I}{\partial x}^2 + \frac{\partial I}{\partial y}^2}
+%\]
+%
+%$r = \sqrt{x^2 + y^2}$
+
+%\end{center}
+
+%A lot more detail needed in this section outlining the method. As a non-expert I'm afraid I'm non the wiser of what's going on having read the section
+
+
+ 
+ %%%%%
+ 
+ \newpage
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                   		CIRCLE FITTING										        	        		        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Circle fitting}
+The circle fitting procedure is carried out by minimising the chi squared function,
+\begin{equation}
+ \chi^2(x_0, y_0, r) = \sum \limits_{n=0}^{N}\left(\sqrt{(x_n-x_0)^2 + (y_n-y_0)^2} - r\right)^2 \cdot I_n
+\end{equation}
+where $x_0$ and $y_0$ correspond to the x and y coordinates of the centre of the circle, $r$ the radius and $(x_n, y_n, I_n)$ are the $x$, $y$ coordinates and intensity for the boundary pixel $n$. Results for the image centre fitting using both the threshold and Sobel boundary finding techniques are shown in figure \ref{fig: comparison of 2010, 2011 boundary fitting}.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=13cm]{$HOME/Dropbox/LHCb/detector/RICH/images/boundary_fitting_comparison.pdf}
+		\caption{Boundary fitting comparison: left) 2010, centre) HPD image summary with image cleaning and Sobel filter applied, right) HPD image summary with fitted circle of centre image overlaid}
+		\label{fig: comparison of 2010, 2011 boundary fitting}
+	\end{center}
+\end{figure}
+
+%Why's this factor of 12 here? It's a constant and won't affect the chi-squared minimisation
+
+ %%%%%
+
+%\subsection{Additional changes to the 2010 fitting code}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                   	ADDITIONAL IMAGE STABILISATION										        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Additional Image Stabilisation} 
+
+Defects in individual HPDs can result in undesirable effects in the detection of particles from proton-proton interactions in the LHCb detector. For example, a defective pixel may exhibit a high population of hits which do not correspond to any physics event. These are referred to as hot pixels. Similarly a defective pixels might not detect any signal at all, these are known as dead pixels. To minimise the the effect of these hot/dead pixels on the HPD image centre calculations smoothing is applied to suspected defective pixels (see figures \ref{image cleaning: hot pixel} and \ref{image cleaning: dead column}). 
+
+Hot pixels are determined by comparing the population of a pixel to the average population for a pixel calculated as the sum of pixel hits divided by the total number of pixels. A conservative threshold value is chosen and the central region is not scanned to ensure only defective pixels are selected. Dead pixels are selected from pixels that have no hits but have neighbouring pixels with a population greater than a user defined threshold value. Again a conservative threshold is chosen to ensure only defective pixels are selected.
+
+\begin{figure}
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{$HOME/Dropbox/LHCb/detector/RICH/images/image_cleaning_hot_pixel.png}
+		\caption{Image cleaning: hot pixel example}	
+		\label{image cleaning: hot pixel}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{$HOME/Dropbox/LHCb/detector/RICH/images/image_cleaning_dead_column.png}
+		\caption{image cleaning: dead column example}
+		\label{image cleaning: dead column}	
+	\end{subfigure}
+	\caption[Optional caption for list of figures]{Other changes to the 2010 fitting code}	
+	\label{fig: Other changes to the 2010 fitting code}
+\end{figure}
+
+%\begin{figure}[ht]
+%	\subfloat[Image cleaning: hot pixel example]
+%	{
+%		\includegraphics[width=13cm]{$HOME/Dropbox/LHCb/detector/RICH/images/image_cleaning_hot_pixel.png}
+%		\label{image cleaning: hot pixel}
+%	}
+%	\\
+%	\subfloat[image cleaning: dead column example]
+%	{
+%		\includegraphics[width=13cm]{$HOME/Dropbox/LHCb/detector/RICH/images/image_cleaning_dead_column.png}
+%		\label{image cleaning: dead column}
+%	}
+%	\label{fig: Other changes to the 2010 fitting code}
+%	\caption[Optional caption for list of figures]{Other changes to the 2010 fitting code}
+%\end{figure}
+

@@ -1,0 +1,286 @@
+\subsection{Efficiency Correction}
+\label{subsection: charged particle multiplicity, efficiency correction}
+
+\input{Chapters/multiplicity/charged_particle_event_multiplicity/response_matrix}
+\input{Chapters/multiplicity/charged_particle_event_multiplicity/true_multiplicity_parameterisations}
+
+%The response functions for the background corrected multiplicities in figure \ref{fig: background corrected track multiplicities} and parameterisations in figure \ref{fig: parameterisation fits} are shown in figure \ref{fig: response function, measured data} and \ref{fig: response function, mc data} for measured and MC data. The corresponding unfolded multiplicities are shown figure \ref{fig: unfolded multiplicity, measured data} and \ref{fig: unfolded multiplicity, mc data} respectively.
+
+The response functions for the background corrected multiplicities in figure \ref{fig: background corrected track multiplicities} and parameterisations in figure \ref{fig: parameterisation fits} are shown in figure \ref{fig: response function, measured data} for measured data. The corresponding unfolded multiplicities are shown figure \ref{fig: unfolded multiplicity, measured data}.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_a/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/truncation/response_function.png}
+		\caption{Parameterisation A}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_b/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/truncation/response_function.png}
+		\caption{Parameterisation B}
+	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_c/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/truncation/response_function.png}
+%		\caption{Parameterisation C}
+%	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_d/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/truncation/response_function.png}
+		\caption{Parameterisation D}
+	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_e/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/truncation/response_function.png}
+%		\caption{Parameterisation E}
+%	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_f/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/truncation/response_function.png}
+		\caption{Parameterisation F}
+	\end{subfigure}
+	\caption{Response Function for $2.0 \le \eta \le 4.5$, Measured Data}
+	\label{fig: response function, measured data}
+\end{figure}
+
+%\newpage
+\begin{table}
+	\centering
+	\caption{Response function parameters}
+	\label{table: response function parameters}
+	\begin{subtable}{0.49\textwidth}
+		\centering
+		\caption{Parameterisation A}
+		\input{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_a/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/parameterised/parameters}
+	\end{subtable}
+	\begin{subtable}{0.49\textwidth}
+		\centering
+		\caption{Parameterisation B}
+		\input{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_b/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/parameterised/parameters}
+	\end{subtable}
+	\begin{subtable}{0.49\textwidth}
+		\caption{Parameterisation D}
+		\centering
+		\input{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_d/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/parameterised/parameters}
+	\end{subtable}
+%	\begin{subtable}{0.49\textwidth}
+%		\centering
+%		\caption{Parameterisation E}
+%		\input{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_e/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/parameterised/parameters}
+%	\end{subtable}
+	\begin{subtable}{0.49\textwidth}
+		\centering
+		\caption{Parameterisation F}
+		\input{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_f/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/parameterised/parameters}
+	\end{subtable}
+\end{table}
+%\newpage
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_a/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/truncation/unfolded_multiplicity}
+		\caption{Parameterisation A}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_b/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/truncation/unfolded_multiplicity}
+		\caption{Parameterisation B}
+	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_c/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation C}
+%	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_d/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/truncation/unfolded_multiplicity}
+		\caption{Parameterisation D}
+	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_e/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/truncation/unfolded_multiplicity}
+%		\caption{Parameterisation E}
+%	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingWithStatsJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_f/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/truncation/unfolded_multiplicity}
+		\caption{Parameterisation F}
+	\end{subfigure}
+	\caption{Unfolded Multiplicity for $2.0 \le \eta \le 4.5$, Measured Data}
+	\label{fig: unfolded multiplicity, measured data}
+\end{figure}
+%
+%\begin{figure}[H]
+%	\centering
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_a/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1//background_corrected/pngs/response_function.png}
+%		\caption{Parameterisation A}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_b/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/pngs/response_function.png}
+%		\caption{Parameterisation B}
+%	\end{subfigure}
+%%	\begin{subfigure}{0.49\textwidth}
+%%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_c/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/pngs/response_function.png}
+%%		\caption{Parameterisation C}
+%%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_d/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/pngs/response_function.png}
+%		\caption{Parameterisation D}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_e/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/pngs/response_function.png}
+%		\caption{Parameterisation E}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_f/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/pngs/response_function.png}
+%		\caption{Parameterisation F}
+%	\end{subfigure}
+%	\caption{Response Function for $2.0 \le \eta \le 4.5$, MC Data}
+%	\label{fig: response function, mc data}
+%\end{figure}
+%
+%\begin{figure}[H]
+%	\centering
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_a/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation A}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_b/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation B}
+%	\end{subfigure}
+%%	\begin{subfigure}{0.49\textwidth}
+%%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_c/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/pngs/unfolded_multiplicity.png}
+%%		\caption{Parameterisation C}
+%%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_d/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation D}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_e/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation E}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_f/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/background_corrected/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation F}
+%	\end{subfigure}
+%	\caption{Unfolded Multiplicity for $2.0 \le \eta \le 4.5$, MC Data}
+%	\label{fig: unfolded multiplicity, mc data}
+%\end{figure}
+
+%Starting with equation \ref{equation: multiplicity-response relationship} the shape of the true distribution is approximated a parameterisation model such as in section \ref{section: genp multiplicity parameterisation}, the initial value of the parameters are set from fits to MC simulated data. Applying the response matrix to the true distribution then gives a corresponding reconstructed distribution, comparing this with the observed reconstructed distribution indicates how accurate the approximated true distribution is. Using an iterative process to systematically perturb the approximated true distribution such that the difference between it corresponding distribution and the observed distribution and is minimised gives the corrected distribution.
+%
+%The starting assumption on the shape of the true distribution is taken from the parameterisation of generator level multiplicity distributions taken from MC simulated data, see section \ref{section: true multiplicity parameterisation}. The difference between the observed and observed and computed reconstruction distribution is quantified by a $\chi^2$ function, 
+%
+%\begin{equation}
+%	\chi^2 = \sum_i (a_i - \sum_j R_{ij} b_j)^2
+%\end{equation}
+%
+
+%%%%%%%%%%%%%%%%%
+
+%\begin{figure}[h]
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_a/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/response_function.png}
+%%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_a/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/response_function.png}
+%		\caption{Parameterisation A}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_b/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/response_function.png}
+%		\caption{Parameterisation B}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_c/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/response_function.png}
+%		\caption{Parameterisation C}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_d/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/response_function.png}
+%		\caption{Parameterisation D}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_e/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/response_function.png}
+%		\caption{Parameterisation E}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_f/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/response_function.png}
+%		\caption{Parameterisation F}
+%	\end{subfigure}
+%	\caption{Response Function: No Background Correction}
+%\end{figure}
+
+%\begin{figure}[h]
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_a/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation A}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_b/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation B}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_c/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation C}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_d/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation D}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_e/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation E}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/real/-1/-1/bk/Down/real/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_f/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation F}
+%	\end{subfigure}
+%	\caption{Unfolded Multiplicity: No Background Correction}
+%\end{figure}
+
+%\begin{figure}[h]
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_a/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/response_function.png}
+%		\caption{Parameterisation A}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_b/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/response_function.png}
+%		\caption{Parameterisation B}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_c/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/response_function.png}
+%		\caption{Parameterisation C}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_d/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/response_function.png}
+%		\caption{Parameterisation D}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_e/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/response_function.png}
+%		\caption{Parameterisation E}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_f/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/response_function.png}
+%		\caption{Parameterisation F}
+%	\end{subfigure}
+%	\caption{Response Function: No Background Correction. MC Data}
+%\end{figure}
+
+%\begin{figure}[h]
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_a/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation A}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_b/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation B}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_c/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation C}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_d/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation D}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_e/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation E}
+%	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/tracks/unfolding/data_files/UnfoldingPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_f/2_0-4_5/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner_multiplicity_full/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/pngs/unfolded_multiplicity.png}
+%		\caption{Parameterisation F}
+%	\end{subfigure}
+%	\caption{Unfolded Multiplicity: No Background Correction. MC Data}
+%\end{figure}

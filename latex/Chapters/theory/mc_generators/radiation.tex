@@ -1,0 +1,45 @@
+\subsection{Initial and Final State Radiation}
+\label{section: parton shower}
+
+Initial state radiation is composed of partons that are emitted from the  beam particles. In the case of proton beams this is modelled as virtual particles being exchanged between the quark constituents; these virtual particles primarily consist of gluons which may further radiate pairs of gluons creating a complicated state of the proton. Similarly final state radiation consists of a myriad of partons but in this case the partons originate from the out-going partons of the hard scatter and initial state radiation.
+
+The probability for branching to occur is generally calculated in one of two ways, either with a matrix element calculated from Feynman diagrams or with the parton shower model. The parton shower model is a simplified version of the matrix element approach with approximations including a simplification of kinematics, interference and helicity structure. Though the matrix element calculations are truer to the theory of QCD, in practice the matrix elements are more difficult to calculate - especially at higher orders. The two approaches are complementary to one another and which approach is used is based on the particular situation. In general the parton shower is chosen as the first place to start due to its flexibility and simplicity whilst for precision measurements the matrix element approach is favoured.
+
+\subsubsection*{Parton Showers}
+The parton shower is made up of branchings of the form $a \rightarrow bc$, e.g for quark-gluon radiation this is, 
+
+\begin{equation*}
+	q \rightarrow qg
+\end{equation*}
+
+Each of the partons in a shower are characterised by its virtuality scale $Q^2$ which gives an approximate sense of its time ordering in the shower, classically it is defined as the invariant mass of the parton; under this definition a system with a low number of high mass partons evolving into a high number of low mass partons will decrease in the virtuality scale as more and more branchings occur. The $Q^2$ variable may also be described by other variables such as its transverse momentum which similarly decreases with the number of branchings. A maximum virtuality scale $Q_{\mathrm{max}}$ distinguishes partons that are involved in the hard process from those in the parton shower, also a minimum virtuality scale $Q_0$ sets the scale at which non-perturbative effects become significant.
+
+Partons with $m^2 < 0$  and $m^2 \ge 0$ are described as space- and time-like respectively. 
+
+\subsubsection*{Initial State Radiation (ISR)}
+For initial state radiation the virtuality scale is typically associated to the mass of the parton given by the equation,
+
+\begin{equation}
+	Q^2 = -m^2 = -(E^2 - p^2)
+\end{equation}
+
+The branching evolution of initial state radiation is described by increasing values of the virtuality scale $Q^2$, this corresponds to a high energy parton from a beam particle emitting partons with increasing virtuality and momentum i.e. the branching partons become more space-like. The branching continues until there are enough partons with $Q^2 \ge Q^2_{\mathrm{max}}$ to initiate the hard process; thus limiting the virtuality of the system, for example, the virtuality of the partons in the process $q\bar{q} \rightarrow Z^0$ have a virtuality cut off of the order of the $2m_{Z^0}$.
+
+In order to generate an event with a particular hard process the shower algorithm first sets the longitudinal momentums $x_1$ and $x_2$ of the incoming partons to that required by the hard process using the parton distribution function. A backward time evolution is then applied to the partons, gaining energy with each emission and decreasing in virtuality until it is compatible with a shower initiating parton in the proton.
+
+\subsubsection*{Final State Radiation (FSR)}
+For final state radiation the initiating shower parton originates from the outgoing partons of the hard interaction via time-like partons. The virtuality scale for partons is typically defined by either its invariant mass or transverse momentum.
+
+\begin{equation}
+	Q^2 = m^2
+\end{equation}
+or
+\begin{equation}
+	Q^2 = p_\perp^2
+\end{equation}
+
+note the change in sign in the mass ordering relative to the ISR. The final state evolves with a decreasing virtuality scale - becoming more time-like. Starting from an outgoing parton from the hard process the branching results in partons with lower mass or transverse momentum depending on the choice of ordering parameter. The minimum virtuality of a parton is set by $Q_0$, partons which cannot branch further due to this cutoff are then used as input for the hadronisation process.
+
+%There are several options for the evolution parameter for final final state radiation. Most common are the invariant mass $m$ and the transverse momentum of the parton $p_\perp$. In contrast to initial state radiation the evolution parameter generally decreases with more branchings, 
+
+%Final state radiation consists of partons radiated from the outgoing partons of the hard process. The cascade of partons are modelled by the DGLAP equations and works downwards to lower momentum scales to a point where perturbation theory breaks down. At this point the partons are evolved to colourless hadrons via the process of hadronization.

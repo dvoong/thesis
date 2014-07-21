@@ -1,0 +1,77 @@
+\section{True Multiplicity Parameterisation}
+\label{section: true multiplicity parameterisation}
+
+The true multiplicity is parameterised using several functions in order to optimise the robustness of the unfolding procedure.
+
+The following parameterisation functions were used,
+
+\begin{itemize}
+	\item $f_A(x) = p_0 e^{p_1x}x^2 + e^{p_2x}x^2$
+	\item $f_B(x) = e^{p_0 + p_1x} \cdot (x + 1)^3 + e^{p_2 + p_3x} \cdot x^2 + e^{p_4 + p_5x} \cdot x^2$
+	\item $f_C(x) = \mathrm{NBD}(x; p_0, p_1) + p_6 \mathrm{NBD}(x + p_8; p_2, p_3) + p_7 \mathrm{NBD}(x + p_9; p_4, p_5)$
+	\item $f_D(x) = e^{p_0 + p_1x} \cdot x^{p_2} + e^{p_3 + p_4x} \cdot x^{p_5} + e^{p_6 + p_7x} \cdot x^{p_8}$
+	\item $f_E(x) = e^{p_0 + p_1 \cdot x^{p_2}} \cdot x^2 + e^{p_3 + p_4x + p_5(p_7x)^{p_6}} + \frac{p_8}{x+1} \cdot e^\frac{p9}{x+1}$
+	\item $f_F(x) = e^{p_0 + p_1x} \cdot x^{p_2} + e^{p_3 + p_4x} \cdot x^2$
+\end{itemize}
+
+%\begin{equation}
+%	f(x) = p_0 e^{p_1x}x^2 + e^{p_2x}x^2
+%\end{equation}
+%
+%\begin{equation}
+%	f(x) = e^{p_0 + p_1x} \cdot (x + 1)^3 + e^{p_2 + p_3x} \cdot x^2 + e^{p_4 + p_5x} \cdot x^2
+%\end{equation}
+%
+%\begin{equation}
+%	f(x) = \frac{n!}{x!(n-x)!} \cdot p^x \cdot (1-p)^{n-x} + p_6 \cdot \left( \frac{n'!}{x!(n'-x)!} \cdot p'^x \cdot(1-p')^{n'-x} \right) + p_7 \cdot \left( \frac{n''!}{(x+1)!(n''-x)!} \cdot p''^{x + 1} \cdot (1-p'')^{(n'' - (x+1))} \right)
+%\end{equation}
+%
+%\begin{equation}
+%	f(x) = e^{p_0 + p_1x} \cdot x^{p_2} + e^{p_3 + p_4x} \cdot x^{p_5} + e^{p_6 + p_7x} \cdot x^{p_8}
+%\end{equation}
+%
+%\begin{equation}
+%	f(x) = e^{p_0 + p_1 \cdot x^{p_2}} \cdot x^2 + e^{p_3 + p_4x + p_5(p_7x)^{p_6}} + \frac{p_8}{x+1} \cdot e^\frac{p9}{x+1}
+%\end{equation}
+%
+%\begin{equation}
+%	f(x) = e^{p_0 + p_1x} \cdot x^{p_2} + e^{p_3 + p_4x} \cdot x^2
+%\end{equation}
+
+Due to the non-perturbative nature of the multiplicity distribution there is ambiguity in the shape of the multiplicity distribution. These parameterisation functions are adopted in order to give a high degree of flexibility and robustness in describing the multiplicity distribution.
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/genps/parameterisation/data_files/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_a/2_0-4_5/pngs/2_0-4_5/parameterisation_a/2_0-4_5/canvas.png}
+		\caption{Parameterisation A}
+		\label{}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/genps/parameterisation/data_files/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_b/2_0-4_5/pngs/2_0-4_5/parameterisation_b/2_0-4_5/canvas.png}
+		\caption{Parameterisation B}
+		\label{}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/genps/parameterisation/data_files/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_c/2_0-4_5/pngs/2_0-4_5/parameterisation_c/2_0-4_5/canvas.png}
+		\caption{Parameterisation C}
+		\label{}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/genps/parameterisation/data_files/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_d/2_0-4_5/pngs/2_0-4_5/parameterisation_d/2_0-4_5/canvas.png}
+		\caption{Parameterisation D}
+		\label{}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/genps/parameterisation/data_files/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_e/2_0-4_5/pngs/2_0-4_5/parameterisation_e/2_0-4_5/canvas.png}
+		\caption{Parameterisation E}
+		\label{}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/genps/parameterisation/data_files/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/parameterisation_f/2_0-4_5/pngs/2_0-4_5/parameterisation_f/2_0-4_5/canvas.png}
+		\caption{Parameterisation F}
+		\label{}
+	\end{subfigure}
+	\caption{Parameterisation fits to MC data}
+	\label{fig: parameterisation fits}
+\end{figure}

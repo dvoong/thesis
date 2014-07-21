@@ -1,0 +1,55 @@
+\section{Charged Particle Density}
+\label{section: charged particle density}
+
+The charged particle density is investigated as a function of pseudorapidity and transverse momentum. The uncorrected distributions are shown in figure \ref{fig: reconstructed eta mag down} and \ref{fig: reconstructed pt mag down} for pseudorapidity and transverse momentum respectively. Comparisons between measured data and MC data are shown in figure \ref{fig: reconstructed track eta, phi, pt and p mag down comparison}.
+
+\begin{figure}[h]
+	\begin{subfigure}[h]{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/kinematic_distributions/tracks/data_files/plots/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner/bk/Down/real/-1/-1/bk/Down/real/-1/-1/pngs/track_distributions/eta_norm_event.png}
+		\caption{$\eta$}
+		\label{fig: reconstructed eta mag down}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}[h]{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/kinematic_distributions/tracks/data_files/plots/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner/bk/Down/real/-1/-1/bk/Down/real/-1/-1/pngs/track_distributions/pt_norm_event.png}
+		\caption{$p_T$ (MeV)}
+		\label{fig: reconstructed pt mag down}
+	\end{subfigure}
+	\caption{Uncorrected reconstructed track $\eta$ and $p_T$ of magnet down data.}
+	\label{fig: reconstructed track eta, phi, pt and p mag down}
+\end{figure}
+
+\begin{figure}
+	\begin{subfigure}[h]{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/kinematic_distributions/tracks/data_files/plots/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner/bk/Down/real/-1/-1/bk/Down/real/-1/-1/pngs/comparison/eta_comparison_norm_event.png}
+		\caption{$\eta$}
+		\label{fig: reconstructed eta mag down comparison}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}[h]{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/kinematic_distributions/tracks/data_files/plots/bk/Down/mc/-1/-1/bk/Down/mc/-1/-1/meissner/bk/Down/real/-1/-1/bk/Down/real/-1/-1/pngs/comparison/pt_comparison_norm_event.png}
+		\caption{$p_T$ (MeV)}
+		\label{fig: reconstructed pt mag down comparison}
+	\end{subfigure}
+	\caption{Uncorrected reconstructed track $\eta$ and $p_T$ of magnet down data. MC data is shown in blue.}
+	\label{fig: reconstructed track eta, phi, pt and p mag down comparison}
+\end{figure}
+
+The true distributions are obscured by detector effects such as detection inefficiencies or the reconstruction of fake tracks. In order to make a measurement of the true distribution several correction procedures are applied. Firstly a background correction is applied to remove the contributions from tracks that are not associated to any true particle but are instead due to mis-reconstruction effects, secondly an efficiency correction is applied which corrects for prompt particles that are not reconstructed i.e. not observed by the detector. This may be due to charged particles being bent outside of the detector by the magnetic field therefore not leaving any trace in the sub-detectors downstream of the magnet, particles that do not induce enough of a response from the detector to be reconstructed or particles that traverse non-sensitive components of the detector. Lastly a pile-up correction is made in order to remove the contribution from events where there are multiple proton-proton interactions i.e. giving a measurement of the charged particle density for single proton-proton interaction events only.
+
+% (the effect can bee seen in the measured/MC data comparisons figures \ref{fig: reconstructed eta mag down comparison} and \ref{fig: reconstructed pt mag down comparison}
+% that corrects for the number of particles observed depending as a function of the region in pseudorapidity and transverse momentum where the multiplicity measurement is made, 
+% due to the exclusion of pile-up effects in MC data)
+
+%\input{./Chapters/multiplicity/charged_particle_density/uncorrected_distributions}
+\input{./Chapters/multiplicity/charged_particle_density/background_corrected_distributions}
+\input{./Chapters/multiplicity/charged_particle_density/efficiency_corrected_distributions}
+\input{./Chapters/multiplicity/charged_particle_density/pile_up}
+\input{./Chapters/multiplicity/charged_particle_density/systematics}
+%\input{./Chapters/multiplicity/charged_particle_density/conclusion}
+
+%\subsection{Uncorrected Distributions}
+%
+%\subsection{Background Corrected Distributions}
+%
+%\subsection{Efficiency Corrected Distributions}

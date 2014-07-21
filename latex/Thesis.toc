@@ -1,0 +1,30 @@
+\contentsline {chapter}{Declaration of Authorship}{i}{dummy.1}
+\vspace {1em}
+\contentsline {chapter}{Abstract}{iii}{dummy.2}
+\vspace {1em}
+\contentsline {chapter}{Acknowledgements}{iv}{dummy.3}
+\vspace {1em}
+\vspace {2em}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.5}
+\contentsline {chapter}{\numberline {2}Background theory}{3}{chapter.6}
+\contentsline {section}{\numberline {2.1}The Standard Model}{3}{section.7}
+\contentsline {subsection}{\numberline {2.1.1}Fundamental Particles}{3}{subsection.8}
+\contentsline {subsection}{\numberline {2.1.2}Quantum Field Theory (QFT)}{5}{subsection.12}
+\contentsline {subsubsection}{\numberline {2.1.2.1}Lagrangian Formalism}{6}{subsubsection.13}
+\contentsline {subsection}{\numberline {2.1.3}Gauge Theories}{6}{subsection.16}
+\contentsline {subsection}{\numberline {2.1.4}Coupling Constants}{7}{subsection.18}
+\contentsline {subsection}{\numberline {2.1.5}Quantum Electrodynamics (QED)}{8}{subsection.22}
+\contentsline {subsection}{\numberline {2.1.6}Quantum Chromodynamics (QCD)}{9}{subsection.26}
+\contentsline {section}{\numberline {2.2}QCD in Proton Collider Experiments}{12}{section.36}
+\contentsline {subsection}{\numberline {2.2.1}Factorisation}{12}{subsection.37}
+\contentsline {section}{\numberline {2.3}Monte Carlo Generators}{14}{section.39}
+\contentsline {subsection}{\numberline {2.3.1}The Hard Process}{14}{subsection.41}
+\contentsline {subsection}{\numberline {2.3.2}Initial and Final State Radiation}{16}{subsection.43}
+\contentsline {subsection}{\numberline {2.3.3}Hadronisation}{18}{subsection.50}
+\contentsline {subsection}{\numberline {2.3.4}The Underlying Event}{20}{subsection.53}
+\contentsline {subsection}{\numberline {2.3.5}Multiple Parton Interactions (MPIs)}{20}{subsection.54}
+\contentsline {subsection}{\numberline {2.3.6}Generator Comparison}{21}{subsection.55}
+\contentsline {section}{\numberline {2.4}Minimum bias data}{23}{section.61}
+\vspace {2em}
+\vspace {2em}
+\contentsline {chapter}{Bibliography}{25}{dummy.65}

@@ -1,0 +1,93 @@
+\subsubsection{True Multiplicity Parameterisation}
+\label{subsection: charged particle event multiplicity, true multiplicity parameterisation}
+
+Starting from equation \ref{equation: multiplicity-response relationship} a heuristic approach to calculating the true particle multiplicity can be employed. By making a educated guess at the shape of the true distribution a corresponding expected multiplicity can be calculated by applying the response matrix. Comparing the observed multiplicity to the expected multiplicity gives a quantifiable measurement of the accuracy of the guess. To achieve this in a more systematic way, a parameterisation of the true distribution ($b'$) can be made for which a corresponding response (or smearing) functions ($a'$) exists. By fitting the response function to the observed multiplicity the associated parameters can be propagated back in terms of the parameterisation of the true multiplicity distribution to give a corrected multiplicity distribution. The response function and corresponding $\chi^2$ minimisation function that were used are,
+
+\begin{equation}
+	a'(p_0, p_1, ..., p_n) = R \cdot b'(p_0, p_1, ..., p_n)
+\end{equation}
+
+\begin{equation}
+	\chi^2(p_0, p_1, ..., p_n) = \sum^{N_\mathrm{max}}_{N_\mathrm{ch}} \sqrt{a(N_\mathrm{ch})^2 - a'(N_\mathrm{ch})^2}
+	\label{equation: response function minimisation}
+\end{equation}
+
+Where $p_0, p_1, ..., p_n$ corresponds to the parameters used to parameterise the response function and hence true multiplicity, $N_\mathrm{max}$ is the maximum number of reconstructed tracks ($N_\mathrm{ch}$), $a(N_\mathrm{ch})$ is the number of events with $N_\mathrm{ch}$ tracks and $a'(N_\mathrm{ch})$ is the number of events with $N_\mathrm{ch}$ reconstructed tracks predicted by the response function.
+
+%The true multiplicity is parameterised using several functions in order to optimise the robustness of the unfolding procedure.
+%The following parameterisation functions were used,
+
+The true multiplicity distribution is parameterised by several parameterisations (listed below). These parameterisations consist of several parameters such that the parameterisations are extremely flexible and robust. This enables the parameterisations to model a range of possible true distributions, minimising the bias associated to modelling an unknown distribution. The initial values of the parameters in each parameterisation are initialised by fitting MC generated data with each parameterisations, the fits are shown in figure \ref{fig: parameterisation fits} and the parameters are shown in table \ref{table: gen multiplicity parameters}.
+
+\begin{itemize}
+	\item $P_A(x) = p_0 e^{p_1x}x^2 + e^{p_2x}x^2$
+	\item $P_B(x) = e^{p_0 + p_1x} \cdot (x + 1)^3 + e^{p_2 + p_3x} \cdot x^2 + e^{p_4 + p_5x} \cdot x^2$
+%	\item $P_C(x) = \mathrm{NBD}(x; p_0, p_1) + p_6 \mathrm{NBD}(x + p_8; p_2, p_3) + p_7 \mathrm{NBD}(x + p_9; p_4, p_5)$
+	\item $P_C(x) = e^{p_0 + p_1x} \cdot x^{p_2} + e^{p_3 + p_4x} \cdot x^{p_5} + e^{p_6 + p_7x} \cdot x^{p_8}$
+%	\item $P_D(x) = e^{p_0 + p_1 \cdot x^{p_2}} \cdot x^2 + e^{p_3 + p_4x + p_5(p_7x)^{p_6}} + \frac{p_8}{x+1} \cdot e^\frac{p9}{x+1}$
+	\item $P_E(x) = e^{p_0 + p_1x} \cdot x^{p_2} + e^{p_3 + p_4x} \cdot x^2$
+\end{itemize}
+
+%\begin{equation}
+%	f(x) = p_0 e^{p_1x}x^2 + e^{p_2x}x^2
+%\end{equation}
+%
+%\begin{equation}
+%	f(x) = e^{p_0 + p_1x} \cdot (x + 1)^3 + e^{p_2 + p_3x} \cdot x^2 + e^{p_4 + p_5x} \cdot x^2
+%\end{equation}
+%
+%\begin{equation}
+%	f(x) = \frac{n!}{x!(n-x)!} \cdot p^x \cdot (1-p)^{n-x} + p_6 \cdot \left( \frac{n'!}{x!(n'-x)!} \cdot p'^x \cdot(1-p')^{n'-x} \right) + p_7 \cdot \left( \frac{n''!}{(x+1)!(n''-x)!} \cdot p''^{x + 1} \cdot (1-p'')^{(n'' - (x+1))} \right)
+%\end{equation}
+%
+%\begin{equation}
+%	f(x) = e^{p_0 + p_1x} \cdot x^{p_2} + e^{p_3 + p_4x} \cdot x^{p_5} + e^{p_6 + p_7x} \cdot x^{p_8}
+%\end{equation}
+%
+%\begin{equation}
+%	f(x) = e^{p_0 + p_1 \cdot x^{p_2}} \cdot x^2 + e^{p_3 + p_4x + p_5(p_7x)^{p_6}} + \frac{p_8}{x+1} \cdot e^\frac{p9}{x+1}
+%\end{equation}
+%
+%\begin{equation}
+%	f(x) = e^{p_0 + p_1x} \cdot x^{p_2} + e^{p_3 + p_4x} \cdot x^2
+%\end{equation}
+
+%Due to the non-perturbative nature of the multiplicity distribution there is ambiguity in the shape of the multiplicity distribution. These parameterisation functions are adopted in order to give a high degree of flexibility and robustness in describing the multiplicity distribution.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/genps/parameterisation/data_files/GenpMultiplicityParameterisationPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_a/2_0-4_5/parameterisation_a.png}
+		\caption{Parameterisation A}
+		\label{}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/genps/parameterisation/data_files/GenpMultiplicityParameterisationPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_b/2_0-4_5/parameterisation_b.png}
+		\caption{Parameterisation B}
+		\label{}
+	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/genps/parameterisation/data_files/GenpMultiplicityParameterisationPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_c/2_0-4_5/parameterisation_c.png}
+%		\caption{Parameterisation C}
+%		\label{}
+%	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/genps/parameterisation/data_files/GenpMultiplicityParameterisationPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_d/2_0-4_5/parameterisation_d.png}
+		\caption{Parameterisation D}
+		\label{}
+	\end{subfigure}
+%	\begin{subfigure}{0.49\textwidth}
+%		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/genps/parameterisation/data_files/GenpMultiplicityParameterisationPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_e/2_0-4_5/parameterisation_e.png}
+%		\caption{Parameterisation E}
+%		\label{}
+%	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{/afs/cern.ch/user/d/dvoong/cmtuser/DaVinci_v33r6/Phys/ChargedParticleMultiplicity/python/multiplicity/genps/parameterisation/data_files/GenpMultiplicityParameterisationPlottingJob/bk/Down/mc/-1/-1/bk/Down/mc/-1/155/parameterisation_f/2_0-4_5/parameterisation_f.png}
+		\caption{Parameterisation F}
+		\label{}
+	\end{subfigure}
+	\caption{Parameterisation fits to MC data for $2.0 \le \eta \le 4.5$. The solid blue line corresponds to the total fit and the dotted lines correspond to the components of the total fit}
+	\label{fig: parameterisation fits}
+\end{figure}
+
+\input{Chapters/multiplicity/charged_particle_event_multiplicity/tables/output}

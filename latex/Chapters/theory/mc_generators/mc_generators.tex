@@ -1,0 +1,148 @@
+\section{Monte Carlo Generators}
+\label{section: mc generators}
+
+Monte Carlo (MC) generators are computational software used to simulate high energy processes. They use the principles of random sampling to emulate quantum mechanical phenomena together with the Standard Model and phenomenological models to describe particle interactions. %Since these processes are computed this gives physicists a full and exclusive modelling of high energy processes.
+
+%Event generation is composed of two phases. The first is the generator stage which simulates the interaction between two initial particles (generally beam particles such as the proton-proton beams at the LHC) and the resulting particles from the parton interaction including their subsequent decays and the remnants (beam remnants in the case of LHC interactions). The second stage simulates the interactions between the particles produced in the initial stage and the components of the detector. This includes the simulation of particles which are produced from interactions with detector material as well as electromagnetic fields present in the detector. Furthermore the electronic signals from the detector components are also simulated. In the case of a perfect detector the result of the detector simulation would yield the particles produced in the generator stage, though in practise this is not the case.
+
+MC generators are important for many aspects of high energy physics. They enable physicists to develop an understanding of how physics models translate to real world experiments bridging between the theoretical and experimental aspects of high energy physics. MC generators provide physicists insight into the frequency of specific types of events as well as the angular distribution of the resultant particles. This enables physicists to estimate the signal to background ratios of specific processes and provide insight into which regions of phase space provide the greatest level of sensitivity for a given process. Understanding the distribution of the resultant particles from a given type of interaction enables highly specialist detector design optimised for sensitivity to a given process.
+
+MC generators are extremely sophisticated programs due to the complexity of high energy process. This process is simplified by factorising the process into several steps. First a hard process is simulated with associated initial state radiation followed by the hadronisation process and final state radiation as well as beam remnants. These components are discussed in the following sections and are visualised in figure \ref{fig: event schematic}.
+
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{/Users/admin/Dropbox/PhD/Thesis/Chapters/theory/mc_generators/images/event_schematic.png}
+	\caption{An event schematic demonstrating the aspects of the interaction \cite{Field:2002vt}}
+	\label{fig: event schematic}
+\end{figure}
+
+%MC generators are extremely sophisticated programs though complexity of high energy processes rivals this. In order to make the process of event generation simpler the process is decomposed into components simplifying the problem via the principle of factorisation. Several of these components are discussed in the following sections.
+
+%\input{./Chapters/theory/mc_generators/physics}
+\input{./Chapters/theory/mc_generators/hard_process}
+\input{./Chapters/theory/mc_generators/radiation}
+\input{./Chapters/theory/mc_generators/hadronisation}
+\input{./Chapters/theory/mc_generators/underlying_event}
+\input{./Chapters/theory/mc_generators/mpi}
+\input{./Chapters/theory/mc_generators/generator_comparison}
+	
+%	\subsection{Parton distributions}
+%	\subsection{Hard Processes}
+%	\subsection{Initial and final state radiation}
+%		Radiation of gluons and photons from the incoming and outgoing patrons form the initial and final state radiation of the process which may result in the requirement of  corrections for the process, these effects become more significant the greater the energy in the event. \\
+%		correction methods
+%		\begin{itemize}
+%			\item Matrix element: Feynman diagrams are calculated, order by order.
+%			\begin{itemize}
+%				\item analytical method
+%				\item The "correct" method
+%				\item difficult in practise
+%				\begin{itemize}
+%					\item Corrections become increasingly difficult for higher and higher orders, particularly loop diagrams
+%				\end{itemize}
+%			\end{itemize}
+%			\item Parton shower
+%			\begin{itemize}
+%				\item parton shower is an initial final state radiation estimation technique
+%				\item combination of two (or more) parton branchings
+%				\item requires matrix element approximated through simplification of the kinematics
+%			\end{itemize}
+%		\end{itemize}
+%	\begin{itemize}
+%		\item both methods are complimentary, the better method depends on the situation
+%		\item If an estimation of the radiation is sufficient then the parton shower model is used
+%		\item High precision measurements such as of $\alpha_s$ use the matrix element method
+%	\end{itemize}
+%	\subsubsection{Parton showers}
+%	\begin{itemize}
+%		\item Radiation is categorised into two categories, initial and final state radiation
+%		\begin{itemize}
+%			\item initial: radiation from incoming partons
+%			\item final: radiation from the hard scatter
+%		\end{itemize}
+%		\item Each parton is characterised with a virtuality scale, $Q^2$
+%		\begin{itemize}
+%			\item gives an approximate sense of time ordering to the cascade
+%			\item has alternative definitions (2 in Pythia)
+%			\item for initial state radiation the $Q^2$ value gradually increases as the hard interaction is approached
+%			\item for final state radiation the $Q^2$ gradually decreases
+%			\item shower evolution cut off at $Q_0$ (1 GeV for QCD branching)
+%			\item above $Q_{max}$ the showers are matched to the hard scatter
+%			\item for final state radiation the strategy is to evolve the original parton downwards in $Q^2$ until a branching occurs
+%			\begin{itemize}
+%				\item the $Q^2$ value of the parton determines its mass or $p_T$ (depending on the definition of $Q^2$
+%				\item the daughters of the branched quark then take on the value of $Q^2$ of the parent and the process is iterated until the cut off $Q_0$ is reached
+%			\end{itemize}
+%			\item for initial state radiation the method is to apply a backwards evolution starting with the hard scatter of an evolved parton distribution
+%		\end{itemize}
+%	\end{itemize}
+%	\subsection{Beam remnants}
+%		\begin{itemize}
+%			\item Prevalent in proton-proton collisions but can also occur for electron-positron colliders ($\gamma \gamma \rightarrow q \bar{q}$)
+%			\item Partons from the beam remnants and hard scatter are colour connected
+%			\item Primordial momentum $k_T$ is the transverse momentum of the shower initiator, reflecting the motion of the quarks in the proton
+%			\item $k_T$ determined from a "suitable" distribution
+%		\end{itemize}
+%	\subsection{Multiple parton interactions (MPI)}
+%		\begin{itemize}
+%			\item For $e^+e^-$ interactions it is reasonable to assume that there is one hard scatter in the event
+%			\item Not so for proton-proton interactions
+%			\item One parton may scatter several times with multiple partons in the other beam
+%			\item several partons from each of the beams may scatter
+%			\item Several different options for modelling MPI in Pythia
+%		\end{itemize}
+%	\subsection{Hadronization models}
+%		\begin{itemize}
+%			\item QCD perturbation theory is valid at short distance (high momentum transfer) interactions
+%			\item At long distances the strong force coupling is large and the perturbation sequence does not converge
+%			\item Colour confinement requires that particles in the final state are colourless
+%			\item Hadronisation: The combination of partons to produce a set of colourless hadrons	(also referred to as fragmentation)
+%			\item A number of schools of phenomenological models have been developed to describe this process
+%			\begin{itemize}
+%				\item String fragmentation
+%				\item Independent fragmentation
+%				\item Cluster fragmentation
+%			\end{itemize}
+%			\item A good model should have,
+%			\begin{itemize}
+%				\item internal consistency
+%				\item describe existing data well
+%				\item high predictive power
+%			\end{itemize}
+%		\end{itemize}
+%		\subsubsection{String fragmentation}
+%			\begin{itemize}
+%				\item default for Pythia
+%				\item Lund model
+%				\item branching parameters
+%				\begin{itemize}
+%					\item jet to hadron + remainder jet
+%					\item string to hadron + remainder string
+%					\item at each branching consider
+%					\begin{itemize}
+%						\item flavour production
+%						\item distribution of energy and momentum
+%					\end{itemize}
+%				\end{itemize}
+%			\end{itemize}
+%			\paragraph{Lund model}
+%				\begin{itemize}
+%					\item Uses the idea of quantum mechanical tunnelling
+%					\item Leads to flavour independent Gaussian spectrum for the $p_T$ of the $q \bar{q}$ pairs
+%					\item Leads to suppression of heavy flavour quark production
+%					\item Meson spin states are determined from the ratio of possible spin states multiplied by a wave function normalisation factor
+%					\item Baryon production
+%					\begin{itemize}
+%						\item diquarks are treated as effectively as a single quark
+%						\item popcorn model: quark-antiquark are produced one after the other
+%					\end{itemize}
+%					\item 
+%				\end{itemize}
+%				
+%			\paragraph{Simple case scenario}
+%				\begin{itemize}
+%					\item Simplest scenario $e^+e^- \rightarrow q \bar{q}$, two jet event
+%					\item lattice QCD studies suggest linear confinement, energy stored in the colour field increases linearly with separation (neglecting Coulomb interaction)
+%					\item Separation of quarks creates a colour flux tube stretched between them
+%					\item Mathematical Lorentz invariant description of this is of a massless relativistic string
+%					\item As the energy in the string increases the string may break and produce a new $q \bar{q}$ pair
+%				\end{itemize}

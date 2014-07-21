@@ -1,0 +1,531 @@
+@article{Dobbs:2004qw,
+      author         = "Dobbs, M.A. and Frixione, S. and Laenen, Eric and
+                        Tollefson, K. and Baer, H. and others",
+      title          = "{Les Houches guidebook to Monte Carlo generators for
+                        hadron collider physics}",
+      pages          = "411-459",
+      year           = "2004",
+      eprint         = "hep-ph/0403045",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      reportNumber   = "FERMILAB-CONF-04-183-T",
+      SLACcitation   = "%%CITATION = HEP-PH/0403045;%%",
+}
+
+@article{Sjostrand:2006za,
+      author         = "Sjostrand, Torbjorn and Mrenna, Stephen and Skands, Peter
+                        Z.",
+      title          = "{PYTHIA 6.4 Physics and Manual}",
+      journal        = "JHEP",
+      volume         = "0605",
+      pages          = "026",
+      doi            = "10.1088/1126-6708/2006/05/026",
+      year           = "2006",
+      eprint         = "hep-ph/0603175",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      reportNumber   = "FERMILAB-PUB-06-052-CD-T, LU-TP-06-13",
+      SLACcitation   = "%%CITATION = HEP-PH/0603175;%%",
+}
+
+@mis{Nason:2013pdg,
+	author	= "Nason and Skands",
+	title = "Monte Carlo Event Generators",
+	collaboration	= "Particle Data Group",
+	year = "2013",
+	url =  "http://pdg.lbl.gov/2013/reviews/rpp2013-rev-mc-event-gen.pdf"
+}
+
+@article{Khachatryan:2010pv,
+      author         = "Khachatryan, Vardan and others",
+      title          = "{First Measurement of the Underlying Event Activity at
+                        the LHC with $\sqrt{s} = 0.9$ TeV}",
+      collaboration  = "CMS Collaboration",
+      journal        = "Eur.Phys.J.",
+      volume         = "C70",
+      pages          = "555-572",
+      doi            = "10.1140/epjc/s10052-010-1453-9",
+      year           = "2010",
+      eprint         = "1006.2083",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2010-014, CMS-QCD-10-001",
+      SLACcitation   = "%%CITATION = ARXIV:1006.2083;%%",
+}
+
+@article{Aaltonen:2010rm,
+      author         = "Aaltonen, T. and others",
+      title          = "{Studying the Underlying Event in Drell-Yan and High
+                        Transverse Momentum Jet Production at the Tevatron}",
+      collaboration  = "CDF Collaboration",
+      journal        = "Phys.Rev.",
+      volume         = "D82",
+      pages          = "034001",
+      doi            = "10.1103/PhysRevD.82.034001",
+      year           = "2010",
+      eprint         = "1003.3146",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "FERMILAB-PUB-10-053-E",
+      SLACcitation   = "%%CITATION = ARXIV:1003.3146;%%",
+}
+
+@article{Acosta:2004wqa,
+      author         = "Acosta, D. and others",
+      title          = "{The underlying event in hard interactions at the
+                        Tevatron $\bar{p}p$ collider}",
+      collaboration  = "CDF Collaboration",
+      journal        = "Phys.Rev.",
+      volume         = "D70",
+      pages          = "072002",
+      doi            = "10.1103/PhysRevD.70.072002",
+      year           = "2004",
+      eprint         = "hep-ex/0404004",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "FERMILAB-PUB-04-041-E",
+      SLACcitation   = "%%CITATION = HEP-EX/0404004;%%",
+}
+
+@article{Abazov:2009gc,
+      author         = "Abazov, V.M. and others",
+      title          = "{Double parton interactions in photon+3 jet events in $p
+                        p^-$ bar collisions $\sqrt{s}=1.96$ TeV}",
+      collaboration  = "D0 Collaboration",
+      journal        = "Phys.Rev.",
+      volume         = "D81",
+      pages          = "052012",
+      doi            = "10.1103/PhysRevD.81.052012",
+      year           = "2010",
+      eprint         = "0912.5104",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "FERMILAB-PUB-09-644-E",
+      SLACcitation   = "%%CITATION = ARXIV:0912.5104;%%",
+}
+
+@article{Drees:1996rw,
+      author         = "Drees, Manuel and Han, Tao",
+      title          = "{Signals for double parton scattering at the Fermilab
+                        Tevatron}",
+      journal        = "Phys.Rev.Lett.",
+      volume         = "77",
+      pages          = "4142-4145",
+      doi            = "10.1103/PhysRevLett.77.4142",
+      year           = "1996",
+      eprint         = "hep-ph/9605430",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      reportNumber   = "MADPH-96-945, UCD-96-17",
+      SLACcitation   = "%%CITATION = HEP-PH/9605430;%%",
+}
+
+@article{Abe:1997bp,
+      author         = "Abe, F. and others",
+      title          = "{Measurement of double parton scattering in $\bar{p}p$
+                        collisions at $\sqrt{s} = 1.8$ TeV}",
+      collaboration  = "CDF Collaboration",
+      journal        = "Phys.Rev.Lett.",
+      volume         = "79",
+      pages          = "584-589",
+      doi            = "10.1103/PhysRevLett.79.584",
+      year           = "1997",
+      reportNumber   = "FERMILAB-PUB-97-083-E, FERMILAB-PUB-98-173-EL",
+      SLACcitation   = "%%CITATION = PRLTA,79,584;%%",
+}
+
+@article{Akesson:1986iv,
+      author         = "Akesson, T. and others",
+      title          = "{Double Parton Scattering in $p p$ Collisions at
+                        $\sqrt{s}=63$-{GeV}}",
+      collaboration  = "Axial Field Spectrometer Collaboration",
+      journal        = "Z.Phys.",
+      volume         = "C34",
+      pages          = "163",
+      doi            = "10.1007/BF01566757",
+      year           = "1987",
+      reportNumber   = "CERN-EP-86-216",
+      SLACcitation   = "%%CITATION = ZEPYA,C34,163;%%",
+}
+
+@article{arXiv:1111.0469,
+      author         = "P. Bartalini et al",
+      title          = "{Multi-Parton Interactions at the LHC}",
+}
+
+@mis{wolf:svd,
+	title = "Singular Value Decomposition",
+	year = "2014",
+	url = "http://mathworld.wolfram.com/SingularValueDecomposition.html"
+}
+
+@techreport{Kwiecinski:314736,
+      author        = "Kwiecinski, J",
+      title         = "{Introduction to the Pomeron}",
+      institution   = "Polish Acad. Sci. Inst. Nucl. Res.",
+      address       = "Cracow",
+      number        = "hep-ph/9611306. INP-1743-PH",
+      month         = "Nov",
+      year          = "1996",
+}
+
+@techreport{Aaij:1662427,
+      author        = "Aaij, Roel et al",
+      title         = "{Measurement of charged particle multiplicities and
+                       densities in $pp$ collisions at $\sqrt{s}$ = 7 TeV in the
+                       forward region}",
+      institution   = "CERN",
+      collaboration = "LHCb collaboration",
+      address       = "Geneva",
+      number        = "arXiv:1402.4430. CERN-PH-EP-2014-023. LHCB-PAPER-2013-070",
+      month         = "Feb",
+      year          = "2014",
+      note          = "Comments: 23 pages, 7 figures",
+}
+
+@misc{lhcb_track_strategies,
+   title = "Tracking strategies used in {LHCb}",
+   year = "2014",
+   url = "https://twiki.cern.ch/twiki/bin/view/LHCb/LHCbTrackingStrategies"
+ }
+ 
+@article{Field:2002vt,
+      author         = "Field, Rick D.",
+      title          = "{The Underlying event in hard scattering processes}",
+      collaboration  = "CDF Collaboration",
+      journal        = "eConf",
+      volume         = "C010630",
+      pages          = "P501",
+      year           = "2001",
+      eprint         = "hep-ph/0201192",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      reportNumber   = "SNOWMASS-2001-P501, UFIFT-HEP-01-19,
+                        FERMILAB-CONF-02-009-E",
+      SLACcitation   = "%%CITATION = HEP-PH/0201192;%%",
+}
+
+@article{PhysRevLett.97.030801,
+  title = {New Measurement of the Electron Magnetic Moment Using a One-Electron Quantum Cyclotron},
+  author = {Odom, B. and Hanneke, D. and D'Urso, B. and Gabrielse, G.},
+  journal = {Phys. Rev. Lett.},
+  volume = {97},
+  issue = {3},
+  pages = {030801},
+  numpages = {4},
+  year = {2006},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.97.030801},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.97.030801}
+}
+
+@misc{particle_table,
+   author = "Dave Fehling",
+   title = "The Standard Model of Particle Physics: A Lunchbox's Guide",
+   year = "2008",
+   url = "http://www.pha.jhu.edu/~dfehling/"
+ }
+
+@book{Griffiths:Introduction-to-elementary-particles,
+	author = "David Griffiths",
+	title = "Introduction to elementary particles",
+	publisher = "Wiley VCH; 2nd, Revised Edition edition",
+	year = "2008",
+}
+
+@book{Antunes-Nobrega:835156,
+      author        = "Antunes-Nobrega, R et al",
+      title         = "{LHCb computing: Technical Design Report}",
+      publisher     = "CERN",
+      collaboration = "LHCb Collaboration",
+      address       = "Geneva",
+      series        = "Technical Design Report LHCb",
+      year          = "2005",
+      note          = "Submitted on 11 May 2005",
+}
+
+@article{Aaij:1493820,
+      author        = "Aaij, R and Albrecht, J et al",
+      title         = "{The LHCb Trigger and its Performance in 2011}",
+      journal       = "J. Instrum.",
+      number        = "arXiv:1211.3055. CERN-LHCb-DP-2012-004. LHCb-DP-2012-004",
+      volume        = "8",
+      pages         = "P04022. 31 p",
+      month         = "Nov",
+      year          = "2012",
+}
+
+@article{1742-6596-396-1-012053,
+  author={Mariusz Witek},
+  title={The Software Architecture of the LHCb High Level Trigger},
+  journal={Journal of Physics: Conference Series},
+  volume={396},
+  number={1},
+  pages={012053},
+  url={http://stacks.iop.org/1742-6596/396/i=1/a=012053},
+  year={2012},
+  abstract={The LHCb experiment is a spectrometer dedicated to the study of heavy flavor at the LHC. The trigger system plays a key role in selecting signal events and rejecting background at the data acquisition phase. The bulk of the LHCb trigger is implemented in software and deployed on a farm running about 20000 processes to analyse incoming events parallel. This system, called the High Level Trigger (HLT), is responsible for reducing the rate from the maximum at which the detector can be read out, 1 MHz, to the 3 kHz which can be processed off-line. Because of the specific LHC running conditions, the HLT had to cope with three times higher event multiplicities than it was designed for in 2010 and 2011. This contribution describes the software architecture of the HLT, focusing on the code optimization and commissioning effort which took place during 2010 and 2011 in order to enable LHCb to trigger efficiently in these unexpected running conditions, and the flexibility and robustness of the LHCb software framework which allowed this reoptimization to be performed in a timely manner.}
+}
+
+@book{Antunes-Nobrega:630828,
+      author        = "Antunes-Nobrega, R et al",
+      title         = "{LHCb trigger system: Technical Design Report}",
+      publisher     = "CERN",
+      collaboration = "LHCb Collaboration",
+      address       = "Geneva",
+      series        = "Technical Design Report LHCb",
+      year          = "2003",
+      note          = "revised version number 1 submitted on 2003-09-24 12:12:22",
+}
+
+@article{1742-6596-293-1-012052,
+  author={Irina Machikhiliyan and the LHCb calorimeter group},
+  title={Current status and performance of the LHCb electromagnetic and hadron calorimeters},
+  journal={Journal of Physics: Conference Series},
+  volume={293},
+  number={1},
+  pages={012052},
+  url={http://stacks.iop.org/1742-6596/293/i=1/a=012052},
+  year={2011},
+  abstract={As a part of the calorimeter system of the LHCb experiment both the Electromagnetic Calorimeter (ECAL) and the Hadron Calorimeter (HCAL) play a key role in the LHCb trigger system providing it with energetic electron, photon and hadron candidates. The article discusses the designs of both calorimeters and reports their present performance as it was obtained from the analysis of early data collected in the spring of 2010.}
+}
+
+@book{Amato:494264,
+      author        = "Amato, S et al",
+      title         = "{LHCb calorimeters: Technical Design Report}",
+      publisher     = "CERN",
+      collaboration = "LHCb Collaboration",
+      address       = "Geneva",
+      series        = "Technical Design Report LHCb",
+      year          = "2000",
+}
+
+@book{Amato:424338,
+      author        = "Amato, S et al",
+      title         = "{LHCb magnet: Technical Design Report}",
+      publisher     = "CERN",
+      collaboration = "LHCb Collaboration",
+      address       = "Geneva",
+      series        = "Technical Design Report LHCb",
+      year          = "2000",
+}
+
+@article{Latham:1491236,
+      author        = "Latham, T",
+      title         = "{Performance of the LHCb Vertex Locator}",
+      month         = "Nov",
+      year          = "2012",
+}
+
+@article{Alves:1129809,
+      author        = "Alves, A Augusto et al",
+      title         = "{The LHCb Detector at the LHC}",
+      journal       = "J. Instrum.",
+      collaboration = "LHCb Collaboration",
+      number        = "LHCb-DP-2008-001. CERN-LHCb-DP-2008-001",
+      volume        = "3",
+      pages         = "S08005",
+      year          = "2008",
+      note          = "Also published by CERN Geneva in 2010",
+}
+
+@article{Adriani:1129808,
+      author        = "Adriani, O et al",
+      title         = "{The LHCf detector at the CERN Large Hadron Collider}",
+      journal       = "J. Instrum.",
+      collaboration = "LHCf Collaboration",
+      volume        = "3",
+      pages         = "S08006",
+      year          = "2008",
+}
+
+@article{Anelli:1129807,
+      author        = "Anelli, G and et al",
+      title         = "{The TOTEM Experiment at the CERN Large Hadron Collider}",
+      journal       = "J. Instrum.",
+      collaboration = "TOTEM Collaboration",
+      volume        = "3",
+      pages         = "S08007",
+      year          = "2008",
+}
+
+@article{Chatrchyan:1129810,
+      author        = "Chatrchyan, S et al",
+      title         = "{The CMS experiment at the CERN LHC. The Compact Muon
+                       Solenoid experiment}",
+      journal       = "J. Instrum.",
+      collaboration = "CMS Collaboration",
+      volume        = "3",
+      pages         = "S08004. 361 p",
+      year          = "2008",
+      note          = "Also published by CERN Geneva in 2010",
+}
+
+@article{Aad:1129811,
+      author        = "Aad, G et al",
+      title         = "{The ATLAS Experiment at the CERN Large Hadron Collider}",
+      journal       = "J. Instrum.",
+      collaboration = "ATLAS Collaboration",
+      volume        = "3",
+      pages         = "S08003. 437 p",
+      year          = "2008",
+      note          = "Also published by CERN Geneva in 2010",
+}
+
+@article{Aamodt:1129812,
+      author        = "Aamodt, K et al",
+      title         = "{The ALICE experiment at the CERN LHC. A Large Ion
+                       Collider Experiment}",
+      journal       = "J. Instrum.",
+      collaboration = "ALICE Collaboration",
+      volume        = "3",
+      pages         = "S08002. 259 p",
+      year          = "2008",
+      note          = "Also published by CERN Geneva in 2010",
+}
+
+@book{Amato:494263,
+author = "Amato, S et al",
+title = "LHCb RICH: Technical Design Report",
+publisher = "CERN",
+address = "Geneva",
+series = "Technical Design Report LHCb",
+year = "2000",
+}
+
+@article{JHEP10(2012)037,
+year={2012},
+journal={Journal of High Energy Physics},
+volume={2012},
+number={10},
+doi={10.1007/JHEP10(2012)037},
+title={Measurement of b-hadron branching fractions for two-body decays into charmless charged hadrons},
+url={http://dx.doi.org/10.1007/JHEP10%282012%29037},
+publisher={Springer-Verlag},
+keywords={Hadron-Hadron Scattering},
+author={Aaij, R. et al},
+pages={1-21},
+language={English}
+}
+
+@article{PhysRevLett.108.201601,
+  title = {First Evidence of Direct $CP$ Violation in Charmless Two-Body Decays of ${B}_{s}^{0}$ Mesons},
+  author = {Aaij, R.et al},
+  collaboration = {LHCb Collaboration},
+  journal = {Phys. Rev. Lett.},
+  volume = {108},
+  issue = {20},
+  pages = {201601},
+  numpages = {8},
+  year = {2012},
+  month = {May},
+  doi = {10.1103/PhysRevLett.108.201601},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.108.201601},
+  publisher = {American Physical Society}
+}
+@article{PhysRevD.85.112013,
+  title = {Measurement of the ratio of branching fractions $\mathcal{B}({B}^{0}\rightarrow{}{K}^{*0}\gamma{})/\mathcal{B}({B}_{s}^{0}\rightarrow{}\phi{}\gamma{})$},
+  author = {Aaij, R. et al},
+  collaboration = {LHCb Collaboration},
+  journal = {Phys. Rev. D},
+  volume = {85},
+  issue = {11},
+  pages = {112013},
+  numpages = {8},
+  year = {2012},
+  month = {Jun},
+  doi = {10.1103/PhysRevD.85.112013},
+  url = {http://link.aps.org/doi/10.1103/PhysRevD.85.112013},
+  publisher = {American Physical Society}
+}
+@article{Aaij2012203,
+title = "Observation of \{CP\} violation in decays ",
+journal = "Physics Letters B ",
+volume = "712",
+number = "3",
+pages = "203 - 212",
+year = "2012",
+note = "",
+issn = "0370-2693",
+doi = "http://dx.doi.org/10.1016/j.physletb.2012.04.060",
+url = "http://www.sciencedirect.com/science/article/pii/S0370269312004893",
+author = "R. Aaij eta al",
+keywords = "\{LHC\}",
+keywords = "<span style='font-style: italic'>CP</span> violation",
+keywords = "Hadronic <span style='font-style: italic'>B</span> decays "
+}
+
+
+
+@article{PhysRevLett.108.251802,  title = {First Observation of the Decay ${B}_{c}^{+}\rightarrow{}J/\psi{}{\pi{}}^{+}{\pi{}}^{-}{\pi{}}^{+}$},  author = {Aaij, R. et al},  collaboration = {LHCb Collaboration},  journal = {Phys. Rev. Lett.},  volume = {108},  issue = {25},  pages = {251802},  numpages = {7},  year = {2012},  month = {Jun},  doi = {10.1103/PhysRevLett.108.251802},  url = {http://link.aps.org/doi/10.1103/PhysRevLett.108.251802},  publisher = {American Physical Society} }
+
+@article{1748-0221-8-02-P02022,
+  author={A A Alves Jr et al},
+  title={Performance of the LHCb muon system},
+  journal={Journal of Instrumentation},
+  volume={8},
+  number={02},
+  pages={P02022},
+  url={http://stacks.iop.org/1748-0221/8/i=02/a=P02022},
+  year={2013},
+  abstract={The performance of the LHCb Muon system and its stability across the full 2010 data taking with LHC running at œôøº s = 7 TeV energy is studied. The optimization of the detector setting and the time calibration performed with the first collisions delivered by LHC is described. Particle rates, measured for the wide range of luminosities and beam operation conditions experienced during the run, are compared with the values expected from simulation. The space and time alignment of the detectors, chamber efficiency, time resolution and cluster size are evaluated. The detector performance is found to be as expected from specifications or better. Notably the overall efficiency is well above the design requirements.}
+}
+
+@book{muon-second-addemdum,
+      title        = "LHCb muon system: second addendum to the Technical Design
+                      Report",
+      publisher    = "CERN",
+      address      = "Geneva",
+      series       = "Technical Design Report LHCb",
+      year         = "2005",
+      note         = "Submitted on 9 Apr 2005",
+}
+
+@book{muon-tdr,
+      author       = "Barbosa-Marinho",
+      title        = "LHCb muon system: Technical Design Report",
+      publisher    = "CERN",
+      address      = "Geneva",
+      series       = "Technical Design Report LHCb",
+      year         = "2001",
+}
+
+@article{Alves:2012ey,
+      author         = "Alves, A.A., Jr and Anderlini, L. and Anelli, M. and
+                        Nobrega, R. Antunes and Auriemma, G. and others",
+      title          = "{Performance of the LHCb muon system}",
+      journal        = "JINST",
+      volume         = "8",
+      pages          = "P02022",
+      doi            = "10.1088/1748-0221/8/02/P02022",
+      year           = "2013",
+      eprint         = "1211.1346",
+      archivePrefix  = "arXiv",
+      primaryClass   = "physics.ins-det",
+      SLACcitation   = "%%CITATION = ARXIV:1211.1346;%%",
+}
+
+@article{Archilli:2013npa,
+      author         = "Archilli, F. and Baldini, W. and Bencivenni, G. and
+                        Bondar, N. and Bonivento, W. and others",
+      title          = "{Performance of the Muon Identification at LHCb}",
+      year           = "2013",
+      eprint         = "1306.0249",
+      archivePrefix  = "arXiv",
+      primaryClass   = "physics.ins-det",
+      reportNumber   = "CERN-LHCB-DP-2013-001, LHCB-DP-2013-001",
+      SLACcitation   = "%%CITATION = ARXIV:1306.0249;%%",
+}
+
+@article{Altarelli:1977zs,
+      author         = "Altarelli, Guido and Parisi, G.",
+      title          = "{Asymptotic Freedom in Parton Language}",
+      journal        = "Nucl.Phys.",
+      volume         = "B126",
+      pages          = "298",
+      doi            = "10.1016/0550-3213(77)90384-4",
+      year           = "1977",
+      reportNumber   = "LPTENS-77-6",
+      SLACcitation   = "%%CITATION = NUPHA,B126,298;%%",
+}

@@ -1,0 +1,22 @@
+\subsection{The Hard Process}
+
+The hard process is described by the parton interaction with the highest momentum transfer, it characterises the properties of the event such as the distribution of particles in the system and their energies. In general, experimentalists are interested in events involving a particular hard process, such as the production of exotic flavoured states, e.g.
+
+\begin{equation}
+	\mathrm{gg} \rightarrow \mathrm{c\bar{c}}
+\end{equation}
+
+describing the process of gluon fusion forming a charm quark-antiquark pair.
+
+The hard process is the first stage of a MC event simulation, next a backwards time evolution is performed on the initiator partons to describe the system before the interaction. In the proton-proton event case this corresponds to the state of the incoming proton pairs. Similarly a forward time evolution is applied to the outgoing partons of the interaction to describe the final state of the system.
+
+The forward evolution is divided into two phases, the first stage describes the radiation of quarks and gluons from the outgoing partons as a series of parton branchings evolving the system from a state with a low number of high momentum partons to a state with a high number of low momentum partons (parton shower \ref{section: parton shower}). This process describes the branchings using perturbative calculations down to a momentum threshold where perturbative methods are no longer applicable. Similarly an upper momentum threshold exists; partons with a momentum greater than this threshold are assigned to the hard process of the event.
+
+The second phase takes the output of the parton shower and evolves it into a system of colourless hadrons using non-perturbative phenomenological models via the process of hadronisation (section \ref{section: hadronisation}). 
+
+%
+%\begin{equation*}
+%	Q >> \Lambda
+%\end{equation*}
+%
+%where $Q$ is the momentum transfer in the process and $\Lambda$ is the QCD scale ($217^{+25}_{-23}$ MeV), the strong coupling constant for these momentums is small allowing the cross-section for these processes to be calculated perturbatively.

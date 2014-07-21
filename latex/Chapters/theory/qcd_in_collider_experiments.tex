@@ -1,0 +1,44 @@
+\section{QCD in Proton Collider Experiments}
+
+The complexity of QCD shown in colour confinement and the running of the strong coupling constant present additional challenges in experimental physics. In order to describe the behaviour of QCD phenomena with perturbative methods the strong coupling constant must be small such that a perturbative expansion in powers of the coupling constant converge. This is true in the case short range interactions where asymptotic freedom is present though this is not the case for long range interactions at the scale of $\Lambda_{QCD}$.
+
+Colour confinement tells us that coloured particles can only be observed in colour singlet states called hadrons. The size of hadrons ($\sim 1$ fm) corresponds to a energy scale of approximately $200$ MeV ($\approx \Lambda_{QCD}$), hence, the observable particles associated to QCD are coupled to long range physics - i.e. incompatible with a purely perturbative description. To describe such states a combination of perturbative and non-perturbative approaches must be used.
+
+% FACTORISATION IS
+\subsection{Factorisation}
+Factorisation is the process of decoupling the hard and soft scale physics in QCD phenomena into products of hard and soft scale terms. By factorising the problem, the well understood perturbative methods can be used to calculate terms involving hard scale interactions - where $\alpha_s << 1$ - and non-perturbative methods are used to calculate the remaining contributions from soft scale physics. 
+
+% FACTORISATION SCHEME
+The hard process is described by a matrix element calculated using the perturbative Feynman approach from the QCD Lagrangian. The soft physics is characterised by a parton distribution function which describes the density and momentum of quarks within the proton. Cross sections are then calculated by convoluting the parton level cross section with the parton distribution function.
+
+For the process, $ij \rightarrow k$ in a proton-proton interaction, the cross-section $\sigma_{ij\rightarrow k}$ is described by,
+
+\begin{equation}
+	\sigma_{ij\rightarrow k} = \int \mathrm{d}x_1 \int \mathrm{d}x_2 f_i^1(x_1)f_j^2(x_2) \hat{\sigma}_{ij \rightarrow k}
+\end{equation}
+
+where $\hat{\sigma}$ is the cross-section for hard partonic cross-sections and $f_i^1$ is the parton distribution function describing the probability of finding a parton of type $i$ in the beam proton $1$ with momentum fraction $x_1$; similarly $f_i^2$ describes the distribution of partons for beam proton 2.
+
+%$x_1$ and $x_2$ are the longitudinal momentum fraction of the interacting partons from protons 1 and 2; 
+
+%PARTON DISTRIBUTION FUNCTIONS 
+Due to the non-perturbative nature of parton distributions, their determination is through fits to experimental data such as from deep inelastic scattering experiments. The parton distribution functions are universal in that the parton distribution function calculated from one experiment may be used as input for another. For experiments involving different energies the behaviour of the parton distribution functions at different energy scales is described by the DGLAP evolution equations \cite{Altarelli:1977zs}. 
+% It is conventional to call the first term on the right of the above equation the leading twist contribution. The remainder is called the higher twist correction. It is formally of order 1/Q2 but not precisely known.
+
+% LORENTZ EFFECTS
+Protons accelerated to high energies are highly boosted in the laboratory rest frame, the proton is Lorentz contracted in the direction of the beamline and time dilated so that its constituent partons appear frozen, each carrying a longitudinal momentum fraction $x$ of the total proton longitudinal momentum. The boost also ensures partons are well modelled as being collinear to its parent proton, i.e. $0 < x < 1$. The beam crossing time is short enough such that an interactions between partons in opposing beams can be modelled as a one-to-one interaction; i.e. interactions in the final state do not interfere with the initial parton-parton interaction. In this environment the proton-proton beams are well modelled as sources of quasi-free quarks and the interactions in the system are well described by a factorisation scheme.
+
+%\input{./Chapters/theory/hadronisation/hadronisation.tex}
+
+
+%High momentum transfer implies the interaction is over a short distance, therefore, interacting partons from each beam particle can be modelled as interacting with one parton from the opposing beam particle
+%Interactions which occur in the final state after the hard scatter are assumed to occur on time scales too long to interfere with the hard scatter; that is the interactions of the partons among themselves, which occur at time-dilated time scales before or after the hard scattering do not interfere with the hard scatter
+%Scattering becomes incoherent (no interference effects), work with probabilities rather than amplitudes
+%Consider the probability of an interaction between two "frozen" states of the two colliding protons, the cross section is approximated by the Born cross section
+%These effects are more prevalent at higher centre of masses
+%
+%proton beams are treated as collections of partons: quasi free quarks and gluons
+%
+%It is convenient to consider a frame in which the target nucleon has a very large momentum. In such a frame the momentum of the parton is almost collinear with the nucleon momentum, so that the target can be seen as a stream of partons, each carrying a fraction x of the longitudinal momentum
+%
+%The factorisation approach has had great success in demonstrating the predictive powers of QCD. 
