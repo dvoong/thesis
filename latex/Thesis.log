@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.21)  18 JUL 2014 12:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.21)  31 JUL 2014 14:25
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **Thesis.tex
 (./Thesis.tex
@@ -733,27 +733,27 @@ tions, their de-ter-mi-na-tion is through
  []
 
 ) (./Chapters/theory/mc_generators/mc_generators.tex [13]
-</Users/admin/Dropbox/PhD/Thesis/Chapters/theory/mc_generators/images/event_sch
-ematic.png, id=283, 1147.28625pt x 571.13374pt>
-File: /Users/admin/Dropbox/PhD/Thesis/Chapters/theory/mc_generators/images/even
-t_schematic.png Graphic file (type png)
+</Users/admin/projects/phd/thesis/latex/Chapters/theory/mc_generators/images/ev
+ent_schematic.png, id=283, 1147.28625pt x 571.13374pt>
+File: /Users/admin/projects/phd/thesis/latex/Chapters/theory/mc_generators/imag
+es/event_schematic.png Graphic file (type png)
 
-<use /Users/admin/Dropbox/PhD/Thesis/Chapters/theory/mc_generators/images/event
-_schematic.png>
-Package pdftex.def Info: /Users/admin/Dropbox/PhD/Thesis/Chapters/theory/mc_gen
-erators/images/event_schematic.png used on input line 13.
+<use /Users/admin/projects/phd/thesis/latex/Chapters/theory/mc_generators/image
+s/event_schematic.png>
+Package pdftex.def Info: /Users/admin/projects/phd/thesis/latex/Chapters/theory
+/mc_generators/images/event_schematic.png used on input line 13.
 (pdftex.def)             Requested size: 417.47307pt x 207.82155pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 (./Chapters/theory/mc_generators/hard_process.tex [14])
-(./Chapters/theory/mc_generators/radiation.tex [15 </Users/admin/Dropbox/PhD/Th
-esis/Chapters/theory/mc_generators/images/event_schematic.png>] [16] [17])
-(./Chapters/theory/mc_generators/hadronisation.tex [18] [19])
+(./Chapters/theory/mc_generators/radiation.tex [15 </Users/admin/projects/phd/t
+hesis/latex/Chapters/theory/mc_generators/images/event_schematic.png>] [16]
+[17]) (./Chapters/theory/mc_generators/hadronisation.tex [18] [19])
 (./Chapters/theory/mc_generators/underlying_event.tex)
 (./Chapters/theory/mc_generators/mpi.tex [20])
-(./Chapters/theory/mc_generators/generator_comparison.tex
+(./Chapters/theory/mc_generators/pythia
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 29.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
@@ -761,14 +761,15 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
- [21]))
-(./Chapters/theory/minimum_bias/minimum_bias.tex [22]
+ [21] [22])
+(./Chapters/theory/mc_generators/epos.tex))
+(./Chapters/theory/minimum_bias/minimum_bias.tex [23]
 
-LaTeX Warning: Reference `fig: diffractive processes' on page 23 undefined on i
+LaTeX Warning: Reference `fig: diffractive processes' on page 24 undefined on i
 nput line 13.
 
 
-<./Chapters/theory/minimum_bias/images/elastic_scattering.png, id=352, 284.0612
+<./Chapters/theory/minimum_bias/images/elastic_scattering.png, id=361, 284.0612
 5pt x 240.9pt>
 File: ./Chapters/theory/minimum_bias/images/elastic_scattering.png Graphic file
  (type png)
@@ -778,7 +779,7 @@ Package pdftex.def Info: ./Chapters/theory/minimum_bias/images/elastic_scatteri
 ng.png used on input line 18.
 (pdftex.def)             Requested size: 133.59444pt x 113.3002pt.
 
-<./Chapters/theory/minimum_bias/images/single_diffractive.png, id=353, 296.1062
+<./Chapters/theory/minimum_bias/images/single_diffractive.png, id=362, 296.1062
 5pt x 245.91875pt>
 File: ./Chapters/theory/minimum_bias/images/single_diffractive.png Graphic file
  (type png)
@@ -788,7 +789,7 @@ Package pdftex.def Info: ./Chapters/theory/minimum_bias/images/single_diffracti
 ve.png used on input line 23.
 (pdftex.def)             Requested size: 133.59444pt x 110.9551pt.
 
-<./Chapters/theory/minimum_bias/images/double_diffractive.png, id=354, 323.2075
+<./Chapters/theory/minimum_bias/images/double_diffractive.png, id=363, 323.2075
 pt x 241.90375pt>
 File: ./Chapters/theory/minimum_bias/images/double_diffractive.png Graphic file
  (type png)
@@ -797,10 +798,9 @@ File: ./Chapters/theory/minimum_bias/images/double_diffractive.png Graphic file
 Package pdftex.def Info: ./Chapters/theory/minimum_bias/images/double_diffracti
 ve.png used on input line 28.
 (pdftex.def)             Requested size: 133.59444pt x 99.98584pt.
- [23]))
-[24 <./Chapters/theory/minimum_bias/images/elastic_scattering.png> <./Chapters/
-theory/minimum_bias/images/single_diffractive.png> <./Chapters/theory/minimum_b
-ias/images/double_diffractive.png>]
+)) [24 <./Chapters/theory/minimum_bias/images/elastic_scattering.png> <./Chapte
+rs/theory/minimum_bias/images/single_diffractive.png> <./Chapters/theory/minimu
+m_bias/images/double_diffractive.png>]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
@@ -814,9 +814,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 240.
  (./Thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 240.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 240.
-Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: BD0FEFA3A2D8BA6DAB61DCB128EED9AD;4431.
 
+
+Package rerunfilecheck Warning: File `Thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Thesis.out':
+(rerunfilecheck)             Before: BD0FEFA3A2D8BA6DAB61DCB128EED9AD;4431
+(rerunfilecheck)             After:  996CE4190AB825D143C44990B4C67C14;4358.
 
 LaTeX Warning: There were undefined references.
 
@@ -826,10 +832,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 240.
  ) 
 Here is how much of TeX's memory you used:
- 13858 strings out of 493315
- 194358 string characters out of 6137903
- 264615 words of memory out of 5000000
- 16939 multiletter control sequences out of 15000+600000
+ 13861 strings out of 493315
+ 194438 string characters out of 6137903
+ 264614 words of memory out of 5000000
+ 16940 multiletter control sequences out of 15000+600000
  17704 words of font info for 67 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,12n,45p,1275b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -853,7 +859,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2013/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on Thesis.pdf (32 pages, 592094 bytes).
+Output written on Thesis.pdf (32 pages, 597009 bytes).
 PDF statistics:
  480 PDF objects out of 1000 (max. 8388607)
  402 compressed objects within 5 object streams

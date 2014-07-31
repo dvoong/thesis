@@ -1,5 +1,5 @@
-\subsection{Generator Comparison}
-\label{section: generator comparison}
+\subsection{Pythia}
+\label{section: pythia}
 
 % Sources
 %   Pythia manual: 
@@ -33,6 +33,32 @@ Overview
    \item JETSET is merged into PYTHIA.
 \end{itemize}
 
+JETSET
+\begin{itemize}
+  \item Developed by the Lund group in the 70's
+  \item Aim: Understand hadronisation process.
+  \item Focused on e+e- annihilation interactions
+  \item By the mid 80's the matrix element method had reached its limit
+  \item Parton shower model was developed
+  \item The success of the parton shower lead attempts to use the model in other interactions, e.g. hadron interactions scattering in PYTHIA.
+  \item In 1996 PYTHIA and JETSET are merged in PYTHIA 6.1.
+\end{itemize}
+
+Factorisation
+\begin{itemize}
+  \item Interactions are complicated, i.e. calculating the cross-sections using pertubative methods are difficult to carry out and interpret.
+  \item Interactions can be simplified by using some assumprtions to break the interaction into phases (factorisation).
+  \item The output from one phase serves as input for the next, analagous to a pipeline
+  \item A phase is dependent only on it input, i.e. the output from previous phase
+  \item e.g. Hadronic events at LEP 
+  \begin{itemize}
+    \item The main (hard) interaction is described by $\mathrm{e}^+\mathrm{e}^- \rightarrow \mathrm{Z}^0 \rightarrow \mathrm{q}\mathrm{\bar{q}}$
+    \item Bremsstrahlung-type modifications i.e. the emission of additional final-state particles by branchings such as $\mathrm{e} \rightarrow \mathrm{e}\mathrm{\gamma}$ and $\mathrm{q} \rightarrow \mathrm{qg}$
+    \item Higher order corrections - loops and soft bremsstrahlung
+    \item Hadronisation. Not well understood from first principles due to confinement. Its modelling may have a significant effect on the event depending on what aspect of the event is being analysed. e.g. the charged particle multiplicity may vary significantly though the overall energy flow is mainly determined by perturbative processes.
+  \end{itemize}
+\end{itemize}
+
 Lund Model / String fragmentation
 \begin{itemize}
 \item Long-range confinement forces are allowed to distribute the energies and flavours of a parton configuration among a collection of primary hadrons.
@@ -43,7 +69,7 @@ Lund Model / String fragmentation
 Fragmentation vs Hadronisation
 \begin{itemize}
   \item Hadronisation is the process of transforming colourless hadrons from coloured partons, i.e. quarks and gluons
-  \item Hadronisation is made up of fragmentation and decay
+  \item Hadronisation is sub-divided into fragmentation and decay
   \item Fragmentation is the break up of high mass coloured states into a system of colourless hadrons, e.g. jet -> hadron + remainder jet.
 \end{itemize}
 
@@ -52,6 +78,3 @@ Fragmentation vs Hadronisation
 \subsection*{Pythia 8}
 
 \subsection*{Pythia LHCb}
-
-\subsection*{EPOS}
-
